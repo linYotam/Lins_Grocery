@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* Good practise ==> inherit here, value in body 
+  When we set box-sizing to inherit on all types of elements, we are basically saying
+  that we want the box-sizing to inherit whatever the parent's box-sizing is */
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; Set: 1rem = 10px */
+  /* 10px (target) / 16px (default value) = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  /* Since we set the box-sizing property to border-box on the <body> element (which is one of the document's top-most nodes), 
+  the property is effectively passed on to all child / grandchild elements*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem 3rem 3rem 3rem;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+}
+
+@font-face {
+  font-family: "Brusher"; /*Can be any text*/
+  src: local("Brusher"), url("/fonts/Brusher.ttf") format("truetype");
+}

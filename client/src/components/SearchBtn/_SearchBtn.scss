@@ -1,0 +1,46 @@
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+
+  .search__icon {
+    font-size: 2.5rem;
+    z-index: 1;
+    &:hover {
+      color: $clr-primary-hover;
+    }
+  }
+
+  &__input {
+    border: none;
+    height: 2.6rem;
+    width: 0rem;
+    position: absolute;
+    left: 0rem;
+    color: $clr-primary;
+    font-family: 'Nunito';
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid $clr-primary;
+    transition: all 0.5s;
+  }
+
+  &__input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: $clr-secondary;
+  }
+
+  &__input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__input.active {
+    transform: translateX(-15rem);
+    width: 15rem;
+  }
+}

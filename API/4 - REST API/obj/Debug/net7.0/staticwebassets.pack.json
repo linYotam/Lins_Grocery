@@ -1,0 +1,137 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_Brie.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_Brie.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_Camembert.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_Camembert.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_almonds.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_almonds.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_apples.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_apples.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_avocado.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_avocado.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_baguette.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_baguette.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bananas.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_bananas.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bass.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_bass.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_blue-cheese.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_blue-cheese.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bread.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_bread.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cherries.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_cherries.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cherry-tomatos.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_cherry-tomatos.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_chicken-breast.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_chicken-breast.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_croissant.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_croissant.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cucumber.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_cucumber.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_eggs.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_eggs.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_frozen-peas.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_frozen-peas.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_grapes.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_grapes.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_lemons.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_lemons.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_lettuce.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_lettuce.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_mango-juice.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_mango-juice.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_olive-oil.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_olive-oil.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_orange-juice.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_orange-juice.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_pasta.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_pasta.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_red-wine.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_red-wine.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_salmon.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_salmon.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_steak.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_steak.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_tomatos.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_tomatos.jpg"
+    },
+    {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_white-wine.jpg",
+      "PackagePath": "staticwebassets\\images\\08052023_white-wine.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.4 - REST API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.4 - REST API.props",
+      "PackagePath": "build\\4 - REST API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.4 - REST API.props",
+      "PackagePath": "buildMultiTargeting\\4 - REST API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.4 - REST API.props",
+      "PackagePath": "buildTransitive\\4 - REST API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,132 @@
+.product {
+  border: 2px solid $clr-primary;
+  display: grid;
+  grid-template-columns: repeat(2, 15rem);
+  grid-row-gap: 3rem;
+  color: $clr-text;
+
+  &__img {
+    width: 99%;
+    height: 17rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 1;
+  }
+
+  &__like {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 2;
+    justify-self: end;
+    margin: 1rem;
+    cursor: pointer;
+    fill: $clr-light-grey;
+    padding: 3px 2px 2px 2px;
+    border-radius: 100px;
+    background-color: #fff;
+  }
+
+  &__like--active {
+    fill: $clr-favorite;
+  }
+
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    z-index: 3;
+    width: 80%;
+    font-family: inherit;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: $clr-primary;
+    color: #fff;
+    font-weight: 400;
+    transform: translateY(50%);
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $clr-primary-hover;
+    }
+  }
+
+  &__icon {
+    // color: #fff;
+    color: $clr-primary;
+    height: 2rem !important;
+    width: 2rem !important;
+    margin-right: 1rem;
+  }
+
+  &__info {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__info__top {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__amount {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto 2rem auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+
+    .add {
+      height: 2rem !important;
+      width: 2rem !important;
+      cursor: pointer;
+      border: 1px solid $clr-primary;
+    }
+
+    .remove {
+      height: 2rem !important;
+      width: 2rem !important;
+      cursor: pointer;
+      border: 1px solid $clr-primary;
+    }
+  }
+
+  .product__btn__cart {
+    color: #fff;
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $clr-secondary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.1rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $clr-secondary-hover;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.deps.json
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\bin\Debug\net6.0\1 - Data Access Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\bin\Debug\net6.0\1 - Data Access Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.AssemblyReference.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.AssemblyInfoInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.AssemblyInfo.cs
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.CoreCompileInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.CopyComplete
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\refint\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\2 - Business Model Layer\obj\Debug\net6.0\ref\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.deps.json
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\bin\Debug\net6.0\1 - Data Access Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\bin\Debug\net6.0\1 - Data Access Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.AssemblyReference.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.AssemblyInfoInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.AssemblyInfo.cs
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.CoreCompileInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.CopyComplete
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\refint\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Politzer\API\2 - Business Model Layer\obj\Debug\net6.0\ref\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.deps.json
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\bin\Debug\net6.0\2 - Business Model Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.AssemblyReference.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.AssemblyInfoInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.AssemblyInfo.cs
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.CoreCompileInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\refint\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\ref\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\bin\Debug\net6.0\1 - Data Access Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\bin\Debug\net6.0\1 - Data Access Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net6.0\2 - Business Model Layer.csproj.CopyComplete

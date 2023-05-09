@@ -1,0 +1,134 @@
+/*******************************/
+/* FOOTER SECTION              */
+/*******************************/
+.footer {
+  padding: 5rem 0;
+  border-top: 2px solid $clr-secondary;
+  color: $clr-text;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 4rem;
+}
+
+.grid--footer {
+  grid-template-columns: 1fr auto auto auto auto;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.4rem;
+}
+
+.logo {
+  height: 20rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+
+.address-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  color: $clr-primary;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.app-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.apple-logo {
+  height: 3.6rem;
+  cursor: pointer;
+}
+
+.google-logo {
+  height: 3.5rem;
+  cursor: pointer;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-icon {
+  height: 3rem;
+  cursor: pointer;
+
+  &__instagram {
+    height: 2.5rem;
+    width: 2.6rem;
+    cursor: pointer;
+  }
+}
+
+.contact-phone {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: $clr-secondary;
+  transition: all 0.4s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: $clr-primary;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  color: $clr-primary;
+  line-height: 1.6;
+  margin-top: 2rem;
+  text-align: center;
+}

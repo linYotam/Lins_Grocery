@@ -1,0 +1,97 @@
+.admin__container {
+  width: 90vw;
+  margin: 5rem auto 3rem auto;
+}
+
+.page-title {
+  font-family: $fnt-logo !important;
+  text-align: center;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  justify-content: center;
+  gap: 3rem;
+
+  .submit-btn {
+    grid-column: 2/4;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-descr {
+    grid-column: span 2;
+    grid-row: span 6;
+  }
+
+  &-image {
+    grid-column: span 2;
+    grid-row: span 4;
+    display: flex;
+    flex-direction: column;
+    //justify-content: end;
+    // border: 1px solid black;
+    // align-items: center;
+    gap: 1.8rem;
+
+    img {
+      border: 1px solid #61a48a;
+      border-radius: 4px;
+    }
+
+    .MuiButtonBase-root {
+      width: 30rem;
+    }
+  }
+
+  .MuiFormLabel-root {
+    font-size: 1.4rem !important;
+    font-family: $fnt-kanit !important;
+  }
+
+  .MuiInputBase-input {
+    font-family: $fnt-kanit !important;
+  }
+
+  .MuiInput-root {
+    font-size: 3.4rem !important;
+  }
+
+  label.Mui-focused {
+    color: $clr-primary !important;
+  }
+
+  .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: $clr-secondary !important;
+  }
+
+  .MuiInputLabel-root,
+  fieldset {
+    font-size: 1.4rem !important;
+  }
+
+  .MuiFormHelperText-root {
+    font-size: 1rem !important;
+    margin-left: 2px !important;
+    margin-top: 0 !important;
+  }
+
+  .MuiSelect-select {
+    font-size: 1.4rem !important;
+    font-family: $fnt-kanit !important;
+  }
+
+  .MuiMenuItem-root {
+    font-size: 1.4rem !important;
+    font-family: $fnt-kanit !important;
+  }
+
+  .MuiInputAdornment-root {
+    p {
+      font-size: 1.4rem;
+      color: #000;
+    }
+  }
+}

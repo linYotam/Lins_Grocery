@@ -1,0 +1,54 @@
+.slider {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  height: calc(100vh - 8rem);
+  width: 100%;
+  position: relative;
+
+  &__container {
+    width: 300rem;
+    height: 70rem;
+    display: flex;
+    margin-left: 56rem;
+    transition: all 1s ease;
+
+    .image {
+      width: 100rem;
+      height: 70rem;
+      object-fit: cover;
+      opacity: 1;
+      cursor: pointer;
+      transition: all 1s ease;
+    }
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    gap: 1rem;
+    bottom: 10rem;
+
+    .icon {
+      height: 5rem;
+      width: 5rem;
+      border: 1px solid #000;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $clr-primary;
+      }
+    }
+  }
+}

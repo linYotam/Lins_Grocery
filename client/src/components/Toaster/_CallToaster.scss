@@ -1,0 +1,13 @@
+.Toastify__toast {
+  width: 50rem;
+  &-body {
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 10rem;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

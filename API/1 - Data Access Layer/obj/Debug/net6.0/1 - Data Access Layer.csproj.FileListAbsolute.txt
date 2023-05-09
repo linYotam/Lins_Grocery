@@ -1,0 +1,15 @@
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\bin\Debug\net6.0\1 - Data Access Layer.deps.json
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\bin\Debug\net6.0\1 - Data Access Layer.runtimeconfig.json
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\bin\Debug\net6.0\1 - Data Access Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\bin\Debug\net6.0\1 - Data Access Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.csproj.AssemblyReference.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.AssemblyInfoInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.AssemblyInfo.cs
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.csproj.CoreCompileInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\EFCorePluralizer.cs
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\refint\1 - Data Access Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\1 - Data Access Layer.genruntimeconfig.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net6.0\ref\1 - Data Access Layer.dll
