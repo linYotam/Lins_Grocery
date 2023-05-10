@@ -1,6 +1,26 @@
-.admin__container {
+.admin {
   width: 90vw;
   margin: 5rem auto 3rem auto;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 23rem auto;
+
+    .admin__search {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.4rem;
+      gap: 1rem;
+
+      &-header {
+        font-family: $fnt-logo;
+        color: $clr-text;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: start;
+      }
+    }
+  }
 }
 
 .page-title {
@@ -27,13 +47,9 @@
   }
 
   &-image {
-    grid-column: span 2;
     grid-row: span 4;
     display: flex;
     flex-direction: column;
-    //justify-content: end;
-    // border: 1px solid black;
-    // align-items: center;
     gap: 1.8rem;
 
     img {

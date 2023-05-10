@@ -1,22 +1,52 @@
 import {
   Add,
   BalanceOutlined,
+  Calculate,
   CategoryOutlined,
   HiveOutlined,
+  LocalFlorist,
   Remove,
   SellOutlined,
   ShoppingCartOutlined,
 } from '@mui/icons-material';
 import React, { useEffect, useState } from 'react';
 import Modal from '../Modal/Modal';
-import axios from 'axios';
+// import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 const Card = ({ product }) => {
-  const { imageData, name, description, price, categoryId, quantity, stock, favorite, title, discount } = product;
+  const {
+    imageData,
+    description,
+    price,
+    categoryId,
+    quantity,
+    extra,
+    weight,
+    weightMsr,
+    favorite,
+    title,
+    discount,
+  } = product;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [amount, setAmount] = useState(0);
   const [isFavorite, setIsFavorite] = useState(favorite);
   const [imgError, setImgError] = useState(false);
+  const [categoryName, setCategoryName] = useState('');
+  const [currentPrice, setCurrentPrice] = useState(0);
+
+  const categories = useSelector(state => state.categories.value);
+
+  useEffect(() => {
+    categories.forEach(category => {
+      if (category.id === categoryId) setCategoryName(category.name);
+    });
+  }, [categories, categoryId]);
+
+  useEffect(() => {
+    if (discount === 0) setCurrentPrice(price);
+    else setCurrentPrice((price - price * (discount / 100)).toFixed(2));
+  }, [discount, price]);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -57,17 +87,24 @@ const Card = ({ product }) => {
           <use xlinkHref="/images/sprite.svg#icon-heart-full" />
         </svg>
 
+        {discount > 0 && <div className="product__discount">Discount {discount}%</div>}
+
         <h5 className="product__name" onClick={handleOpenModal}>
           {title}
         </h5>
-        <h2>yosi</h2>
+
         <div className="product__info__top">
           <SellOutlined className="product__icon" />
-          <p>${price}</p>
+          {discount > 0 && (
+            <p>
+              <span className="product__erase_number">&{price}</span> ${currentPrice}
+            </p>
+          )}
+          {discount === 0 && <p>${currentPrice}</p>}
         </div>
         <div className="product__info__top">
           <CategoryOutlined className="product__icon" />
-          <p>{categoryId}</p>
+          <p>{categoryName}</p>
         </div>
         <div className="product__info">
           <HiveOutlined className="product__icon" />
@@ -75,7 +112,18 @@ const Card = ({ product }) => {
         </div>
         <div className="product__info">
           <BalanceOutlined className="product__icon" />
-          <p>{stock}</p>
+          <p>
+            {weight}
+            {weightMsr}
+          </p>
+        </div>
+        <div className="product__info">
+          <LocalFlorist className="product__icon" />
+          <p>{extra}</p>
+        </div>
+        <div className="product__info">
+          <Calculate className="product__icon" />
+          <p>${currentPrice * amount}</p>
         </div>
 
         <div className="product__amount">

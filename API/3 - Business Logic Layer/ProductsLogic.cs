@@ -37,15 +37,20 @@ namespace Grocery
 
             if (product == null) return null;
 
+            product.ProductTitle = productModel.Title;
             product.ProductName = productModel.Name;
-            product.ProductDescription = productModel.Description;
-            product.ImageData = productModel.ImageData;
-            product.Discountinued = productModel.Discountinued;
             product.CategoryId = productModel.CategoryId;
+            product.ProductDescription = productModel.Description;
+            product.Weight = productModel.Weight;
+            product.WeightMsr = productModel.WeightMsr;
             product.UnitPrice = productModel.Price;
+            product.ImageData = productModel.ImageData;
             product.UnitsInStock = productModel.Stock;
             product.QuantityPerUnit = productModel.Quantity;
+            product.Discountinued = productModel.Discountinued;
             product.Discount = productModel.Discount;
+            product.Extra = productModel.Extra;
+            product.CurrentPrice = productModel.CurrentPrice;
 
             await DB.SaveChangesAsync();
 
@@ -58,15 +63,27 @@ namespace Grocery
 
             if (product == null) return null;
 
-            if (productModel.Name != null) product.ProductName = productModel.Name;
-            if (productModel.Description != null) product.ProductDescription = productModel.Description;
-            if (productModel.ImageData != null) product.ImageData = productModel.ImageData;
-            product.Discountinued = productModel.Discountinued;
+            if (productModel.Title != null)  
+                product.ProductTitle = productModel.Title;
+            if (productModel.Name != null)  
+                product.ProductName = productModel.Name;
             product.CategoryId = productModel.CategoryId;
+            if (productModel.Description != null)  
+                product.ProductDescription = productModel.Description;
+            product.Weight = productModel.Weight;
+            if (productModel.WeightMsr != null)  
+                product.WeightMsr = productModel.WeightMsr;
             product.UnitPrice = productModel.Price;
+            if (productModel.ImageData != null)  
+                product.ImageData = productModel.ImageData;
             product.UnitsInStock = productModel.Stock;
+            product.QuantityPerUnit = productModel.Quantity;
+            product.Discountinued = productModel.Discountinued;
             product.Discount = productModel.Discount;
-            if (productModel.Quantity != null) product.QuantityPerUnit = productModel.Quantity;
+            if (productModel.Extra != null)  
+                product.Extra = productModel.Extra;
+            if (productModel.CurrentPrice != null)
+                product.CurrentPrice = productModel.CurrentPrice;
 
             await DB.SaveChangesAsync();
 

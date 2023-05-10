@@ -29,7 +29,11 @@ public partial class Product
 
     public bool Discountinued { get; set; } = false;
 
-    public int Discount { get; set; } = 0;  
+    public int Discount { get; set; } = 0;
+
+    public string Extra{ get; set; } = "";
+
+    public decimal CurrentPrice { get; set; } = 0;
 
     public virtual Category Category { get; set; } = null!;
 }

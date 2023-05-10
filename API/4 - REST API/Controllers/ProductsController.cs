@@ -104,20 +104,6 @@ namespace Grocery
             }
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> AddProduct(ProductModel productModel)
-        //{
-        //    try
-        //    {
-        //        ProductModel addedProduct = await logic.AddProductAsync(productModel);
-        //        return Created("api/products/" + addedProduct.ID, addedProduct);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-        //    }
-        //}
-
         [HttpPost]
         public async Task<IActionResult> AddProduct()
         {
@@ -142,7 +128,9 @@ namespace Grocery
                     Stock = short.Parse(formCollection["stock"]),
                     Quantity = int.Parse(formCollection["quantity"]),
                     Discountinued = bool.Parse(formCollection["discountinued"]),
-                    Discount = int.Parse(formCollection["discount"])
+                    Discount = int.Parse(formCollection["discount"]),
+                    Extra= formCollection["extra"],
+                    CurrentPrice = decimal.Parse(formCollection["currentPrice"]),
                 };
                 
                 // Check if an image file was provided

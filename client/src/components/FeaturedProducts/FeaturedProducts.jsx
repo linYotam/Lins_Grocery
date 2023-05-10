@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 
 const FeaturedProducts = () => {
   const filterProducts = useSelector(state => state.filterProducts.value);
-
   const productsJSX = filterProducts.map(product => (
     <li key={product.id}>
       <Card product={product} />

@@ -123,16 +123,20 @@ const Filter = () => {
 
     const filter = selectedCategories.map(category => category.id);
     const sort = selectedSort.sortValue === undefined ? 'name-asc' : selectedSort.sortValue;
-
-    // console.log(products);
-    // console.log(filter);
+    let currentPrice = 0;
 
     for (let i = 0; i < products.length; i++) {
+      if (products[i].discount === 0) {
+        currentPrice = products[i].price;
+      } else {
+        currentPrice = (products[i].price - products[i].price * (products[i].discount / 100)).toFixed(2);
+      }
+
       for (let j = 0; j < filter.length; j++) {
         if (
-          (products[i].categoryId === parseInt(filter[j]) || filter[j] === '0') &&
-          products[i].price >= sliderValue[0] &&
-          products[i].price <= sliderValue[1]
+          (products[i].categoryId === parseInt(filter[j]) || filter[j] === 0) &&
+          currentPrice >= sliderValue[0] &&
+          currentPrice <= sliderValue[1]
         ) {
           newFilterData.push(products[i]);
           break;
@@ -143,10 +147,18 @@ const Filter = () => {
     switch (sort) {
       case 'price-asc':
         newFilterData.sort((a, b) => {
-          if (a.price > b.price) {
+          let priceA = 0;
+          let priceB = 0;
+
+          if (a.discount === 0) priceA = a.price;
+          else priceA = (a.price - a.price * (a.discount / 100)).toFixed(2);
+          if (b.discount === 0) priceB = b.price;
+          else priceB = (b.price - b.price * (b.discount / 100)).toFixed(2);
+
+          if (priceA > priceB) {
             return 1;
           }
-          if (a.price < b.price) {
+          if (priceA < priceB) {
             return -1;
           }
           return 0;
@@ -154,10 +166,18 @@ const Filter = () => {
         break;
       case 'price-dsc':
         newFilterData.sort((a, b) => {
-          if (a.price < b.price) {
+          let priceA = 0;
+          let priceB = 0;
+
+          if (a.discount === 0) priceA = a.price;
+          else priceA = (a.price - a.price * (a.discount / 100)).toFixed(2);
+          if (b.discount === 0) priceB = b.price;
+          else priceB = (b.price - b.price * (b.discount / 100)).toFixed(2);
+
+          if (priceA < priceB) {
             return 1;
           }
-          if (a.price > b.price) {
+          if (priceA > priceB) {
             return -1;
           }
           return 0;

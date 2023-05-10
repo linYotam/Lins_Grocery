@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets\\images\\08052023_white-wine.jpg"
     },
     {
+      "Id": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\09052023_rice.jpg",
+      "PackagePath": "staticwebassets\\images\\09052023_rice.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.4 - REST API.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

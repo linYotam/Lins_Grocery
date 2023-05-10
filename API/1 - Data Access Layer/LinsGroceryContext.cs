@@ -108,7 +108,12 @@ public partial class LinsGroceryContext : DbContext
             entity.Property(e => e.QuantityPerUnit).HasColumnName("quantity_per_unit");
             entity.Property(e => e.Discountinued).HasColumnName("discountinued");
             entity.Property(e => e.Discount).HasColumnName("discount");
-            
+            entity.Property(e => e.Extra)
+     .HasMaxLength(50)
+     .HasColumnName("product_extra");
+            entity.Property(e => e.CurrentPrice)
+    .HasColumnType("money")
+    .HasColumnName("product_current_price");
             entity.HasOne(d => d.Category).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
                 .OnDelete(DeleteBehavior.ClientSetNull)

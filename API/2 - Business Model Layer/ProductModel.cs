@@ -51,6 +51,9 @@ namespace Grocery
 
         public int Discount { get; set; } = 0;
 
+        public string Extra { get; set; } = "";
+
+        public decimal CurrentPrice { get; set; } = 0;
 
         public ProductModel() { }
 
@@ -69,6 +72,8 @@ namespace Grocery
             Discountinued = product.Discountinued;
             CategoryId = product.CategoryId;
             Discount = product.Discount;
+            Extra  = product.Extra;
+            CurrentPrice = product.CurrentPrice;
         }
 
         public Product ConvertToProduct()
@@ -87,7 +92,9 @@ namespace Grocery
                 QuantityPerUnit = Quantity,
                 Discountinued = Discountinued,
                 CategoryId = CategoryId,
-                Discount = Discount
+                Discount = Discount,
+                Extra = Extra,
+                CurrentPrice = CurrentPrice
         };
         }
 

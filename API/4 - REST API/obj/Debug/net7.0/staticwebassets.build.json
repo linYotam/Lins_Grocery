@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UxypFnHqacSJ+Y7UWFRNDxxnMpWyBSDZHZUbe54tcvM=",
+  "Hash": "mgIHm9t1Y6vEzNTGU2dPrXC/sTEXnOMF4Qe5tE7gnhc=",
   "Source": "4 - REST API",
   "BasePath": "_content/4 - REST API",
   "Mode": "Default",
@@ -508,6 +508,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\08052023_white-wine.jpg"
+    },
+    {
+      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\09052023_rice.jpg",
+      "SourceId": "4 - REST API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "BasePath": "_content/4 - REST API",
+      "RelativePath": "images/09052023_rice.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\09052023_rice.jpg"
     }
   ]
 }
