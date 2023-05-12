@@ -49,7 +49,14 @@
   gap: 3rem;
 
   .submit-btn {
-    grid-column: 2/4;
+    grid-column: 2/3;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clear-btn {
+    grid-column: 3/4;
     width: 30rem;
     margin-left: auto;
     margin-right: auto;

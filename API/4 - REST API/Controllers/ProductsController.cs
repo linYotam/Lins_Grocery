@@ -162,6 +162,64 @@ namespace Grocery
             }
         }
 
+        [HttpPatch]
+        public async Task<IActionResult> UpdatePartialProduct()
+        {
+            try
+            {
+
+                // Read the form data from the request body
+                var formCollection = await Request.ReadFormAsync();
+
+                var imageFile = formCollection.Files["imageData"];
+
+                // Extract fields
+                var productModel = new ProductModel
+                {
+                    Title = formCollection["title"],
+                    Name = formCollection["name"],
+                    CategoryId = int.Parse(formCollection["categoryId"]),
+                    Description = formCollection["description"],
+                    Weight = decimal.Parse(formCollection["weight"]),
+                    WeightMsr = formCollection["weightMsr"],
+                    Price = decimal.Parse(formCollection["price"]),
+                    Stock = short.Parse(formCollection["stock"]),
+                    Quantity = int.Parse(formCollection["quantity"]),
+                    Discontinued = bool.Parse(formCollection["discontinued"]),
+                    Discount = int.Parse(formCollection["discount"]),
+                    Extra = formCollection["extra"],
+                    CurrentPrice = decimal.Parse(formCollection["currentPrice"]),
+                    ImageData = formCollection["imageUrl"],
+                    ID = int.Parse(formCollection["id"]),
+                };
+
+                // Check if an image file was provided
+                if (imageFile != null && imageFile.Length > 0)
+                {
+
+                    // Save the image file to local storage
+                    string date = DateTime.Now.ToString("ddMMyyyy");
+                    var fileName = $"{date}_{formCollection["imageName"]}";
+                    var imagePath = Path.Combine(_environment.WebRootPath, "images", fileName);
+
+                    using (var stream = new FileStream(imagePath, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+
+                    // Save the URL of the image to the database
+                    productModel.ImageData = $"/images/{fileName}";
+                }
+
+                ProductModel? updatedProduct = await logic.UpdatePartialProductAsync(productModel);
+                return Ok(updatedProduct);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
 
         [HttpPut]
         [Route("{id}")]
@@ -182,24 +240,24 @@ namespace Grocery
             }
         }
 
-        [HttpPatch]
-        [Route("{id}")]
-        public async Task<IActionResult> UpdatePartialProduct(int id, ProductModel productModel)
-        {
-            try
-            {
-                productModel.ID = id;
-                ProductModel? updatedProduct = await logic.UpdatePartialProductAsync(productModel);
+        //[HttpPatch]
+        //[Route("{id}")]
+        //public async Task<IActionResult> UpdatePartialProduct(int id, ProductModel productModel)
+        //{
+        //    try
+        //    {
+        //        productModel.ID = id;
+        //        ProductModel? updatedProduct = await logic.UpdatePartialProductAsync(productModel);
 
-                if (updatedProduct == null) return NotFound($"id {id} not found.");
+        //        if (updatedProduct == null) return NotFound($"id {id} not found.");
 
-                return Ok(updatedProduct);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
+        //        return Ok(updatedProduct);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+        //    }
+        //}
 
         [HttpDelete]
         [Route("{id}")]

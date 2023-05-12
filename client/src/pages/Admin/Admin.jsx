@@ -19,6 +19,7 @@ import imageCompression from "browser-image-compression";
 import {
   AttachMoney,
   CloudUploadOutlined,
+  HighlightOffOutlined,
   Percent,
   PhotoCamera,
   SearchOutlined,
@@ -69,7 +70,10 @@ const Admin = () => {
   const [matchingProducts, setMatchingProducts] = useState([]);
   const [product, setProduct] = useState({});
 
+  //! GET CATEGORIES
   useEffect(() => {
+    console.log(products[0]);
+    console.log("product init: " + product);
     axios
       .get("https://localhost:7062/api/Categories")
       .then((response) => {
@@ -80,6 +84,7 @@ const Admin = () => {
       });
   }, []);
 
+  //! PRODUCT DEFAULT VALUES
   const setDefaultValues = () => {
     setProductTitle("");
     setProductName("");
@@ -100,6 +105,7 @@ const Admin = () => {
     setProductId(0);
   };
 
+  //! COMPRESS IMAGE
   const compressImage = async (event) => {
     const imageFile = event.target.files[0];
     setImageFileName(imageFile.name);
@@ -123,6 +129,7 @@ const Admin = () => {
     }
   };
 
+  //! ADD/UPDATE PRODUCT TO DB
   const handleAddNewProduct = (e) => {
     e.preventDefault();
 
@@ -138,6 +145,7 @@ const Admin = () => {
     formData.append("price", productPrice);
     formData.append("imageData", imageFile);
     formData.append("imageName", imageFileName);
+    formData.append("imageUrl", image);
     formData.append("stock", productStock);
     formData.append("quantity", productQuantityPerUnit);
     formData.append("discount", productDiscount);
@@ -145,23 +153,41 @@ const Admin = () => {
     formData.append("extra", productExtra);
     formData.append("currentPrice", productCurrentPrice);
 
-    console.log(URL.createObjectURL(imageFile));
+    if (productId > 0) formData.append("id", productId);
 
-    axios
-      .post("https://localhost:7062/api/Products", formData)
-      .then((response) => {
-        setProductId(response.data.id);
-        CallToast(
-          `The product "${productTitle}" added successfully to the Database`,
-          "success"
-        );
-        setDefaultValues();
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    //! Create new product
+    if (productId === 0) {
+      axios
+        .post("https://localhost:7062/api/Products", formData)
+        .then((response) => {
+          setProductId(response.data.id);
+          CallToast(
+            `The product "${productTitle}" added successfully to the Database`,
+            "success"
+          );
+          setDefaultValues();
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+      //! Update product
+    } else {
+      axios
+        .patch("https://localhost:7062/api/Products", formData)
+        .then((response) => {
+          setProductId(response.data.id);
+          CallToast(
+            `The product "${productTitle}" updated successfully in the Database`,
+            "success"
+          );
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
   };
 
+  //! UPDATE CURRENT PRICE
   const updateProductPrice = (e) => {
     let priceValue = 0;
     let discountValue = 0;
@@ -190,22 +216,8 @@ const Admin = () => {
       }
     }
   };
-  // const [title, setTitle] = useState("Add New Product");
-  // const [addNewProduct, setAddNewProduct] = useState(true);
 
-  // const theme = createTheme({
-  //   palette: {
-  //     primary: {
-  //       // Purple and green play nicely together.
-  //       main: "#c29e5b",
-  //     },
-  //     secondary: {
-  //       // This is green.A700 as hex.
-  //       main: "#c29e5b",
-  //     },
-  //   },
-  // });
-
+  //! SEARCH PRODUCT
   const handleSearchProduct = () => {
     console.log(product);
 
@@ -226,6 +238,7 @@ const Admin = () => {
     setImage(product.imageData);
   };
 
+  //! AUTOCOMPLETE RESULTS
   const handleInputChange = (event) => {
     const userInput = event.target.value;
     let matchingProducts = "";
@@ -283,7 +296,9 @@ const Admin = () => {
             onClick={handleSearchProduct}
             className="admin__search-btn"
             component="span"
-            variant="outlined"
+            variant="contained"
+            // color="neutral"
+            size="large"
             startIcon={<SearchOutlined />}
             style={{ backgroundColor: "#c29e5b", color: "white" }}
           >
@@ -294,7 +309,7 @@ const Admin = () => {
         {/* //! MAIN SECTION */}
 
         <form className="grid__container">
-          {/* //? TITLE */}
+          {/* //! TITLE */}
           <TextField
             className="grid__container-title"
             inputProps={{
@@ -304,27 +319,33 @@ const Admin = () => {
             variant="outlined"
             required
             value={productTitle}
-            onChange={(e) => setProductTitle(e.target.value)}
+            onChange={(e) => {
+              setProductTitle(e.target.value);
+            }}
           />
 
-          {/* //? NAME */}
+          {/* //! NAME */}
           <TextField
             inputProps={{ style: { fontSize: "14px", width: "16rem" } }}
             label="Product Name"
             variant="outlined"
             required
             value={productName}
-            onChange={(e) => setProductName(e.target.value)}
+            onChange={(e) => {
+              setProductName(e.target.value);
+            }}
           />
 
-          {/* //? CATEGORY */}
+          {/* //! CATEGORY */}
           <FormControl required>
             <InputLabel htmlFor="category-select">Product Category</InputLabel>
             <Select
               id="category-select"
               label="Product Category"
               value={categoryValue}
-              onChange={(e) => setCategoryValue(e.target.value)}
+              onChange={(e) => {
+                setCategoryValue(e.target.value);
+              }}
             >
               {categories.map((category) => (
                 <MenuItem key={category.id} value={category.id}>
@@ -334,7 +355,7 @@ const Admin = () => {
             </Select>
           </FormControl>
 
-          {/* //? STOCK */}
+          {/* //! STOCK */}
           <TextField
             inputProps={{
               style: { fontSize: "14px" },
@@ -346,10 +367,12 @@ const Admin = () => {
             type="number"
             required
             value={productStock}
-            onChange={(e) => setProductStock(parseInt(e.target.value))}
+            onChange={(e) => {
+              setProductStock(parseInt(e.target.value));
+            }}
           />
 
-          {/* //? QUANTITY */}
+          {/* //! QUANTITY */}
           <TextField
             inputProps={{
               style: { fontSize: "14px" },
@@ -361,12 +384,12 @@ const Admin = () => {
             type="number"
             required
             value={productQuantityPerUnit}
-            onChange={(e) =>
-              setProductQuantityPerUnit(parseInt(e.target.value))
-            }
+            onChange={(e) => {
+              setProductQuantityPerUnit(parseInt(e.target.value));
+            }}
           />
 
-          {/* //? PRICE */}
+          {/* //! PRICE */}
           <TextField
             InputProps={{
               startAdornment: <AttachMoney />,
@@ -384,7 +407,7 @@ const Admin = () => {
             onChange={updateProductPrice}
           />
 
-          {/* //? DISCOUNT */}
+          {/* //! DISCOUNT */}
           <TextField
             inputProps={{
               style: { fontSize: "14px" },
@@ -403,7 +426,7 @@ const Admin = () => {
             onChange={updateProductPrice}
           />
 
-          {/* //? CURRENT PRICE */}
+          {/* //! CURRENT PRICE */}
           <TextField
             InputProps={{
               startAdornment: <AttachMoney />,
@@ -420,7 +443,7 @@ const Admin = () => {
             value={productCurrentPrice}
           />
 
-          {/* //? DESCRIPTION */}
+          {/* //! DESCRIPTION */}
           <TextField
             className="grid__container-description"
             inputProps={{
@@ -432,10 +455,12 @@ const Admin = () => {
             multiline
             rows={15}
             value={productDescription}
-            onChange={(e) => setProductDescription(e.target.value)}
+            onChange={(e) => {
+              setProductDescription(e.target.value);
+            }}
           />
 
-          {/* //? WEIGHT */}
+          {/* //! WEIGHT */}
           <TextField
             inputProps={{
               style: { fontSize: "14px" },
@@ -446,10 +471,12 @@ const Admin = () => {
             type="number"
             required
             value={productWeight}
-            onChange={(e) => setProductWeight(e.target.value)}
+            onChange={(e) => {
+              setProductWeight(e.target.value);
+            }}
           />
 
-          {/* //? WEIGHT MSR */}
+          {/* //! WEIGHT MSR */}
           <FormControl required>
             <InputLabel htmlFor="weightMsr-select">
               Product Weight Units
@@ -458,7 +485,9 @@ const Admin = () => {
               id="category-select"
               label="Product Weight Units"
               value={productWeightMsr}
-              onChange={(e) => setProductWeightMsr(e.target.value)}
+              onChange={(e) => {
+                setProductWeightMsr(e.target.value);
+              }}
             >
               {weightUnits.map((unit, index) => (
                 <MenuItem key={index} value={unit}>
@@ -468,7 +497,7 @@ const Admin = () => {
             </Select>
           </FormControl>
 
-          {/* //? IMAGE */}
+          {/* //! IMAGE */}
           <div className="grid__container-image">
             <Box
               className="grid__container-image-box"
@@ -484,9 +513,11 @@ const Admin = () => {
             <label htmlFor="image-upload" className="image_btn">
               <Button
                 component="span"
-                pvariant="outlined"
                 startIcon={<PhotoCamera />}
-                style={{ backgroundColor: "#61a48a", color: "white" }}
+                variant="contained"
+                // color="neutral"
+                size="large"
+                // style={{ backgroundColor: "#61a48a", color: "white" }}
               >
                 Upload Image
               </Button>
@@ -501,7 +532,7 @@ const Admin = () => {
             </Box>
           </div>
 
-          {/* //? EXTRA */}
+          {/* //! EXTRA */}
           <TextField
             className="grid__container-title"
             inputProps={{
@@ -511,10 +542,12 @@ const Admin = () => {
             variant="outlined"
             required
             value={productExtra}
-            onChange={(e) => setProductExtra(e.target.value)}
+            onChange={(e) => {
+              setProductExtra(e.target.value);
+            }}
           />
 
-          {/* //? ID */}
+          {/* //! ID */}
           <TextField
             inputProps={{
               style: { fontSize: "14px" },
@@ -528,7 +561,7 @@ const Admin = () => {
             value={productId}
           />
 
-          {/* //? DEISCONTINUED */}
+          {/* //! DEISCONTINUED */}
           <FormControl required error>
             <InputLabel htmlFor="Discontinued-select">Discontinued</InputLabel>
             <Select
@@ -536,7 +569,9 @@ const Admin = () => {
               id="Discontinued-select"
               label="Discontinued"
               value={productDiscontinued}
-              onChange={(e) => setProductDiscontinued(e.target.value)}
+              onChange={(e) => {
+                setProductDiscontinued(e.target.value);
+              }}
             >
               <MenuItem value={true}>True</MenuItem>
               <MenuItem value={false}>False</MenuItem>
@@ -548,11 +583,26 @@ const Admin = () => {
             className="submit-btn"
             type="submit"
             component="span"
-            pvariant="outlined"
+            variant="contained"
+            color="success"
+            size="large"
             startIcon={<CloudUploadOutlined />}
-            style={{ backgroundColor: "#c29e5b", color: "white" }}
+            // style={{ backgroundColor: "#61a48a", color: "white" }}
           >
             Upload Product
+          </Button>
+          <Button
+            onClick={setDefaultValues}
+            className="clear-btn"
+            type="button"
+            component="span"
+            variant="contained"
+            color="secondary"
+            size="large"
+            startIcon={<HighlightOffOutlined />}
+            // style={{ backgroundColor: "#c29e5b", color: "white" }}
+          >
+            Clear Product
           </Button>
           <ToastContainer />
         </form>
