@@ -47,7 +47,7 @@ namespace Grocery
         [Range(1, 200, ErrorMessage = "Quantity must be between 1 to 200")]
         public int Quantity { get; set; } = 0;
 
-        public bool Discountinued { get; set; } = false;
+        public bool Discontinued { get; set; } = false;
 
         public int Discount { get; set; } = 0;
 
@@ -69,7 +69,7 @@ namespace Grocery
             ImageData = product.ImageData;
             Stock = product.UnitsInStock;
             Quantity = product.QuantityPerUnit;
-            Discountinued = product.Discountinued;
+            Discontinued = product.Discontinued;
             CategoryId = product.CategoryId;
             Discount = product.Discount;
             Extra  = product.Extra;
@@ -90,7 +90,7 @@ namespace Grocery
                 ImageData = ImageData,
                 UnitsInStock = Stock,
                 QuantityPerUnit = Quantity,
-                Discountinued = Discountinued,
+                Discontinued = Discontinued,
                 CategoryId = CategoryId,
                 Discount = Discount,
                 Extra = Extra,

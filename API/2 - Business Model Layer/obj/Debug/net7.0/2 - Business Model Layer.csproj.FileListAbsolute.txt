@@ -13,3 +13,18 @@ E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\A
 E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\refint\2 - Business Model Layer.dll
 E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.pdb
 E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\ref\2 - Business Model Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\bin\Debug\net7.0\2 - Business Model Layer.deps.json
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\bin\Debug\net7.0\2 - Business Model Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\bin\Debug\net7.0\2 - Business Model Layer.pdb
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\bin\Debug\net7.0\1 - Data Access Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\bin\Debug\net7.0\1 - Data Access Layer.pdb
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.csproj.AssemblyReference.cache
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.AssemblyInfoInputs.cache
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.AssemblyInfo.cs
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.csproj.CoreCompileInputs.cache
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.csproj.CopyComplete
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\refint\2 - Business Model Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\2 - Business Model Layer.pdb
+C:\Users\Yotam\Desktop\Lins_Grocery\API\2 - Business Model Layer\obj\Debug\net7.0\ref\2 - Business Model Layer.dll

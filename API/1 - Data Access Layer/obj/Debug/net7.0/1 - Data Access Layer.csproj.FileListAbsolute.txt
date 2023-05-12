@@ -13,3 +13,18 @@ E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\A
 E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.pdb
 E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.genruntimeconfig.cache
 E:\מסמכים\Programming\Full Stack .NET React project - Yotam\LINs Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\ref\1 - Data Access Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\bin\Debug\net7.0\1 - Data Access Layer.deps.json
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\bin\Debug\net7.0\1 - Data Access Layer.runtimeconfig.json
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\bin\Debug\net7.0\1 - Data Access Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\bin\Debug\net7.0\1 - Data Access Layer.pdb
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.csproj.AssemblyReference.cache
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.AssemblyInfoInputs.cache
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.AssemblyInfo.cs
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.csproj.CoreCompileInputs.cache
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\EFCorePluralizer.cs
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\refint\1 - Data Access Layer.dll
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.pdb
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\1 - Data Access Layer.genruntimeconfig.cache
+C:\Users\Yotam\Desktop\Lins_Grocery\API\1 - Data Access Layer\obj\Debug\net7.0\ref\1 - Data Access Layer.dll

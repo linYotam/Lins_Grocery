@@ -1,6 +1,25 @@
 .admin {
+  &__search {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   width: 90vw;
   margin: 5rem auto 3rem auto;
+
+  .page-title {
+    font-family: $fnt-logo !important;
+    text-align: center;
+  }
+
+  &__btn {
+    width: 15rem;
+    font-family: $fnt-kanit;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
 
   &__container {
     display: grid;
@@ -23,11 +42,6 @@
   }
 }
 
-.page-title {
-  font-family: $fnt-logo !important;
-  text-align: center;
-}
-
 .grid__container {
   display: grid;
   grid-template-columns: repeat(4, 30rem);
@@ -41,7 +55,7 @@
     margin-right: auto;
   }
 
-  &-descr {
+  &-description {
     grid-column: span 2;
     grid-row: span 6;
   }

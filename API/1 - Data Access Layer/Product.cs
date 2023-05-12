@@ -27,7 +27,7 @@ public partial class Product
 
     public int QuantityPerUnit { get; set; } = 0;
 
-    public bool Discountinued { get; set; } = false;
+    public bool Discontinued { get; set; } = false;
 
     public int Discount { get; set; } = 0;
 

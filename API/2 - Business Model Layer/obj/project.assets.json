@@ -3655,19 +3655,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\linyo\\.nuget\\packages\\": {}
+    "C:\\Users\\Yotam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
+      "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
       "projectName": "2 - Business Model Layer",
-      "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
-      "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
-      "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\obj\\",
+      "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
+      "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3681,8 +3681,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj": {
-              "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj"
+            "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj": {
+              "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj"
             }
           }
         }

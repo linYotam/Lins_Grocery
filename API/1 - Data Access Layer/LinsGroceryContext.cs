@@ -24,10 +24,12 @@ public partial class LinsGroceryContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    //Original Computer: P17TH39
+    //Laptop: 5A98KU6
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-P17TH39\\SQLEXPRESS;Database=LinsGrocery;Trusted_Connection=True;TrustServerCertificate=True");
-
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-5A98KU6\\SQLEXPRESS;Database=LinsGrocery;Trusted_Connection=True;TrustServerCertificate=True");
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -106,7 +108,7 @@ public partial class LinsGroceryContext : DbContext
             entity.Property(e => e.ImageData).HasColumnName("image_data");
             entity.Property(e => e.UnitsInStock).HasColumnName("units_in_stock");
             entity.Property(e => e.QuantityPerUnit).HasColumnName("quantity_per_unit");
-            entity.Property(e => e.Discountinued).HasColumnName("discountinued");
+            entity.Property(e => e.Discontinued).HasColumnName("discountinued");
             entity.Property(e => e.Discount).HasColumnName("discount");
             entity.Property(e => e.Extra)
      .HasMaxLength(50)

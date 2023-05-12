@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\4 - REST API.csproj": {}
+    "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj": {}
   },
   "projects": {
-    "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj": {
+    "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
+        "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
         "projectName": "1 - Data Access Layer",
-        "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
-        "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
-        "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\obj\\",
+        "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
+        "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,17 +97,17 @@
         }
       }
     },
-    "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj": {
+    "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
+        "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
         "projectName": "2 - Business Model Layer",
-        "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
-        "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
-        "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\obj\\",
+        "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj",
+        "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,8 +121,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj": {
-                "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj"
+              "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj": {
+                "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj"
               }
             }
           }
@@ -178,17 +178,17 @@
         }
       }
     },
-    "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
+    "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj",
+        "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj",
         "projectName": "3 - Business Logic Layer",
-        "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj",
-        "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
-        "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\3 - Business Logic Layer\\obj\\",
+        "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj",
+        "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -202,8 +202,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj": {
-                "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj"
+              "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj": {
+                "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\2 - Business Model Layer\\2 - Business Model Layer.csproj"
               }
             }
           }
@@ -259,17 +259,17 @@
         }
       }
     },
-    "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\4 - REST API.csproj": {
+    "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\4 - REST API.csproj",
+        "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
         "projectName": "4 - REST API",
-        "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\4 - REST API.csproj",
-        "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
-        "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\obj\\",
+        "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
+        "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -283,8 +283,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
-                "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj"
+              "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
+                "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj"
               }
             }
           }

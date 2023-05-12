@@ -8,11 +8,11 @@ import {
   Remove,
   SellOutlined,
   ShoppingCartOutlined,
-} from '@mui/icons-material';
-import React, { useEffect, useState } from 'react';
-import Modal from '../Modal/Modal';
+} from "@mui/icons-material";
+import React, { useEffect, useState } from "react";
+import Modal from "../Modal/Modal";
 // import axios from 'axios';
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
 const Card = ({ product }) => {
   const {
@@ -32,13 +32,13 @@ const Card = ({ product }) => {
   const [amount, setAmount] = useState(0);
   const [isFavorite, setIsFavorite] = useState(favorite);
   const [imgError, setImgError] = useState(false);
-  const [categoryName, setCategoryName] = useState('');
+  const [categoryName, setCategoryName] = useState("");
   const [currentPrice, setCurrentPrice] = useState(0);
 
-  const categories = useSelector(state => state.categories.value);
+  const categories = useSelector((state) => state.categories.value);
 
   useEffect(() => {
-    categories.forEach(category => {
+    categories.forEach((category) => {
       if (category.id === categoryId) setCategoryName(category.name);
     });
   }, [categories, categoryId]);
@@ -57,11 +57,11 @@ const Card = ({ product }) => {
   };
 
   const addAmount = () => {
-    setAmount(prev => prev + 1);
+    setAmount((prev) => prev + 1);
   };
 
   const removeAmount = () => {
-    if (amount > 0) setAmount(prev => prev - 1);
+    if (amount > 0) setAmount((prev) => prev - 1);
   };
 
   const toggleFavorite = () => {
@@ -77,17 +77,24 @@ const Card = ({ product }) => {
       <div className="product">
         <img
           // src={imgError ? '/images/no_image.jpg' : imageUrl}
-          src={imageData || '/images/placeholder.png'}
+          src={imageData || "/images/placeholder.png"}
           alt={description}
           onError={handleImageError}
           className="product__img"
         />
 
-        <svg className={`product__like ${isFavorite ? 'product__like--active' : ''}`} onClick={toggleFavorite}>
+        <svg
+          className={`product__like ${
+            isFavorite ? "product__like--active" : ""
+          }`}
+          onClick={toggleFavorite}
+        >
           <use xlinkHref="/images/sprite.svg#icon-heart-full" />
         </svg>
 
-        {discount > 0 && <div className="product__discount">Discount {discount}%</div>}
+        {discount > 0 && (
+          <div className="product__discount">Discount {discount}%</div>
+        )}
 
         <h5 className="product__name" onClick={handleOpenModal}>
           {title}
@@ -97,7 +104,8 @@ const Card = ({ product }) => {
           <SellOutlined className="product__icon" />
           {discount > 0 && (
             <p>
-              <span className="product__erase_number">&{price}</span> ${currentPrice}
+              <span className="product__erase_number">${price}</span> $
+              {currentPrice}
             </p>
           )}
           {discount === 0 && <p>${currentPrice}</p>}
@@ -141,7 +149,7 @@ const Card = ({ product }) => {
       {isModalOpen && (
         <Modal
           product={product}
-          imageUrl={imgError ? '/images/no_image.jpg' : imageData}
+          imageUrl={imgError ? "/images/no_image.jpg" : imageData}
           handleCloseModal={handleCloseModal}
         />
       )}

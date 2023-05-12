@@ -127,7 +127,7 @@ namespace Grocery
                     Price = decimal.Parse(formCollection["price"]),
                     Stock = short.Parse(formCollection["stock"]),
                     Quantity = int.Parse(formCollection["quantity"]),
-                    Discountinued = bool.Parse(formCollection["discountinued"]),
+                    Discontinued = bool.Parse(formCollection["discontinued"]),
                     Discount = int.Parse(formCollection["discount"]),
                     Extra= formCollection["extra"],
                     CurrentPrice = decimal.Parse(formCollection["currentPrice"]),

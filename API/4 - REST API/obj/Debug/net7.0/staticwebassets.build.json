@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mgIHm9t1Y6vEzNTGU2dPrXC/sTEXnOMF4Qe5tE7gnhc=",
+  "Hash": "ZI6KMq9R/QeN2CTzPgkAfIemCb18dbMFd5HnVmo4Hjo=",
   "Source": "4 - REST API",
   "BasePath": "_content/4 - REST API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "4 - REST API\\wwwroot",
       "Source": "4 - REST API",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_almonds.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_almonds.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_almonds.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_almonds.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_apples.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_apples.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_apples.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_apples.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_avocado.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_avocado.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_avocado.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_avocado.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_baguette.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_baguette.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_baguette.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_baguette.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bananas.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bananas.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_bananas.jpg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_bananas.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bass.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bass.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_bass.jpg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_bass.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_blue-cheese.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_blue-cheese.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_blue-cheese.jpg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_blue-cheese.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bread.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_bread.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_bread.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_bread.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_Brie.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_Brie.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_Brie.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_Brie.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_Camembert.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_Camembert.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_Camembert.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_Camembert.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cherries.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cherries.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_cherries.jpg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_cherries.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cherry-tomatos.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cherry-tomatos.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_cherry-tomatos.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_cherry-tomatos.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_chicken-breast.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_chicken-breast.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_chicken-breast.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_chicken-breast.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_croissant.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_croissant.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_croissant.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_croissant.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cucumber.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_cucumber.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_cucumber.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_cucumber.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_eggs.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_eggs.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_eggs.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_eggs.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_frozen-peas.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_frozen-peas.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_frozen-peas.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_frozen-peas.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_grapes.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_grapes.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_grapes.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_grapes.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_lemons.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_lemons.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_lemons.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_lemons.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_lettuce.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_lettuce.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_lettuce.jpg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_lettuce.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_mango-juice.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_mango-juice.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_mango-juice.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_mango-juice.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_olive-oil.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_olive-oil.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_olive-oil.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_olive-oil.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_orange-juice.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_orange-juice.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_orange-juice.jpg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_orange-juice.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_pasta.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_pasta.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_pasta.jpg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_pasta.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_red-wine.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_red-wine.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_red-wine.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_red-wine.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_salmon.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_salmon.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_salmon.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_salmon.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_steak.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_steak.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_steak.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_steak.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_tomatos.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_tomatos.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_tomatos.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_tomatos.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_white-wine.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\08052023_white-wine.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/08052023_white-wine.jpg",
       "AssetKind": "All",
@@ -510,10 +510,44 @@
       "OriginalItemSpec": "wwwroot\\images\\08052023_white-wine.jpg"
     },
     {
-      "Identity": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\images\\09052023_rice.jpg",
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\09052023_butter.jpg",
       "SourceId": "4 - REST API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\LINs Grocery\\API\\4 - REST API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
+      "BasePath": "_content/4 - REST API",
+      "RelativePath": "images/09052023_butter.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\09052023_butter.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\09052023_corn.jpg",
+      "SourceId": "4 - REST API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
+      "BasePath": "_content/4 - REST API",
+      "RelativePath": "images/09052023_corn.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\09052023_corn.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\09052023_rice.jpg",
+      "SourceId": "4 - REST API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\",
       "BasePath": "_content/4 - REST API",
       "RelativePath": "images/09052023_rice.jpg",
       "AssetKind": "All",

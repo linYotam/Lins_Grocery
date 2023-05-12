@@ -47,7 +47,7 @@ namespace Grocery
             product.ImageData = productModel.ImageData;
             product.UnitsInStock = productModel.Stock;
             product.QuantityPerUnit = productModel.Quantity;
-            product.Discountinued = productModel.Discountinued;
+            product.Discontinued = productModel.Discontinued;
             product.Discount = productModel.Discount;
             product.Extra = productModel.Extra;
             product.CurrentPrice = productModel.CurrentPrice;
@@ -78,7 +78,7 @@ namespace Grocery
                 product.ImageData = productModel.ImageData;
             product.UnitsInStock = productModel.Stock;
             product.QuantityPerUnit = productModel.Quantity;
-            product.Discountinued = productModel.Discountinued;
+            product.Discontinued = productModel.Discontinued;
             product.Discount = productModel.Discount;
             if (productModel.Extra != null)  
                 product.Extra = productModel.Extra;
