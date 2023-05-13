@@ -189,7 +189,7 @@ namespace Grocery
                     Discount = int.Parse(formCollection["discount"]),
                     Extra = formCollection["extra"],
                     CurrentPrice = decimal.Parse(formCollection["currentPrice"]),
-                    ImageData = formCollection["imageUrl"],
+                    //ImageData = formCollection["imageUrl"],
                     ID = int.Parse(formCollection["id"]),
                 };
 

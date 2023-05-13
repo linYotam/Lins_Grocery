@@ -129,6 +129,14 @@
       "PackagePath": "staticwebassets\\images\\09052023_rice.jpg"
     },
     {
+      "Id": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\13052023_cod.jpg",
+      "PackagePath": "staticwebassets\\images\\13052023_cod.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\wwwroot\\images\\13052023_pexels-deane-bayas-14062103.jpg",
+      "PackagePath": "staticwebassets\\images\\13052023_pexels-deane-bayas-14062103.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.4 - REST API.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

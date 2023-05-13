@@ -63,7 +63,7 @@ namespace Grocery
 
             if (product == null) return null;
 
-            if (productModel.Title != null)  
+            if (productModel.Title != null )  
                 product.ProductTitle = productModel.Title;
             if (productModel.Name != null)  
                 product.ProductName = productModel.Name;
@@ -74,7 +74,7 @@ namespace Grocery
             if (productModel.WeightMsr != null)  
                 product.WeightMsr = productModel.WeightMsr;
             product.UnitPrice = productModel.Price;
-            if (productModel.ImageData != null)  
+            if (productModel.ImageData != null && productModel.ImageData != "")  
                 product.ImageData = productModel.ImageData;
             product.UnitsInStock = productModel.Stock;
             product.QuantityPerUnit = productModel.Quantity;

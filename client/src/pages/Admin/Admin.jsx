@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import {
   Typography,
-  // createTheme,
-  // ThemeProvider,
   Box,
   Button,
   FormControl,
@@ -15,7 +13,6 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import imageCompression from "browser-image-compression";
-
 import {
   AttachMoney,
   CloudUploadOutlined,
@@ -26,29 +23,13 @@ import {
 } from "@mui/icons-material";
 import CallToast from "../../components/Toaster/CallToaster";
 import { ToastContainer } from "react-toastify";
-
-// const p = {
-//   id: 0,
-//   categoryId: 0,
-//   currentPrice: 0,
-//   description: "",
-//   discountinued: false,
-//   discount: 0,
-//   extra: "",
-//   imageData: "",
-//   name: "",
-//   price: 0,
-//   quantity: 0,
-//   stock: 0,
-//   title: "",
-//   weight: 0,
-//   weightMsr: "",
-// };
+import { updateProducts } from "../../features/products/productsSlice";
 
 const weightUnits = ["kg", "g", "l", "ml"];
 
 const Admin = () => {
   const products = useSelector((state) => state.products.value);
+  const dispatch = useDispatch();
   const [productTitle, setProductTitle] = useState("");
   const [productName, setProductName] = useState("");
   const [productDescription, setProductDescription] = useState("");
@@ -69,11 +50,11 @@ const Admin = () => {
   const [image, setImage] = useState(null);
   const [matchingProducts, setMatchingProducts] = useState([]);
   const [product, setProduct] = useState({});
+  const [clearValue, setClearValue] = useState(false);
+  const [title, setTitle] = useState("Add New Product");
 
   //! GET CATEGORIES
   useEffect(() => {
-    console.log(products[0]);
-    console.log("product init: " + product);
     axios
       .get("https://localhost:7062/api/Categories")
       .then((response) => {
@@ -103,6 +84,8 @@ const Admin = () => {
     setProductExtra("");
     setProductCurrentPrice(0);
     setProductId(0);
+    setTitle("Add New Product");
+    setClearValue((prev) => !prev);
   };
 
   //! COMPRESS IMAGE
@@ -129,11 +112,28 @@ const Admin = () => {
     }
   };
 
+  //! LOAD PRODUCTS
+  const loadProducts = () => {
+    axios
+      .get("https://localhost:7062/api/Products")
+      .then((response) => {
+        const newData = response.data.map((product) => {
+          product.imageData = `https://localhost:7062${product.imageData}`;
+          return product;
+        });
+        dispatch(updateProducts([...newData]));
+        // setLoading(false);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   //! ADD/UPDATE PRODUCT TO DB
   const handleAddNewProduct = (e) => {
     e.preventDefault();
 
-    //Check all the required fields have valid data
+    //todo Check all the required fields have valid data
 
     const formData = new FormData();
     formData.append("title", productTitle);
@@ -145,7 +145,6 @@ const Admin = () => {
     formData.append("price", productPrice);
     formData.append("imageData", imageFile);
     formData.append("imageName", imageFileName);
-    formData.append("imageUrl", image);
     formData.append("stock", productStock);
     formData.append("quantity", productQuantityPerUnit);
     formData.append("discount", productDiscount);
@@ -166,6 +165,7 @@ const Admin = () => {
             "success"
           );
           setDefaultValues();
+          loadProducts();
         })
         .catch((error) => {
           console.error(error);
@@ -175,11 +175,13 @@ const Admin = () => {
       axios
         .patch("https://localhost:7062/api/Products", formData)
         .then((response) => {
-          setProductId(response.data.id);
           CallToast(
             `The product "${productTitle}" updated successfully in the Database`,
             "success"
           );
+          // Clear the autocomplete field
+          setClearValue((prev) => !prev);
+          loadProducts();
         })
         .catch((error) => {
           console.error(error);
@@ -219,8 +221,6 @@ const Admin = () => {
 
   //! SEARCH PRODUCT
   const handleSearchProduct = () => {
-    console.log(product);
-
     setProductTitle(product.title);
     setProductName(product.name);
     setProductDescription(product.description);
@@ -236,6 +236,8 @@ const Admin = () => {
     setProductCurrentPrice(product.currentPrice);
     setProductId(product.id);
     setImage(product.imageData);
+
+    setTitle("Update Product");
   };
 
   //! AUTOCOMPLETE RESULTS
@@ -258,7 +260,7 @@ const Admin = () => {
   return (
     <div className="admin">
       <Typography variant="h2" gutterBottom className="page-title">
-        Add New Product
+        {title}
       </Typography>
 
       <div className="admin__container">
@@ -274,6 +276,7 @@ const Admin = () => {
           </Typography>
 
           <Autocomplete
+            key={clearValue}
             options={matchingProducts}
             getOptionLabel={(option) =>
               option.id.toString() + " - " + option.title
@@ -587,7 +590,6 @@ const Admin = () => {
             color="success"
             size="large"
             startIcon={<CloudUploadOutlined />}
-            // style={{ backgroundColor: "#61a48a", color: "white" }}
           >
             Upload Product
           </Button>
@@ -600,31 +602,13 @@ const Admin = () => {
             color="secondary"
             size="large"
             startIcon={<HighlightOffOutlined />}
-            // style={{ backgroundColor: "#c29e5b", color: "white" }}
           >
             Clear Product
           </Button>
-          <ToastContainer />
         </form>
       </div>
 
       <ToastContainer />
-      {/* <ThemeProvider theme={theme}>
-        <Button
-          variant="outlined"
-          className="admin__btn"
-          onClick={() => setAddNewProduct(true)}
-        >
-          Add New Product
-        </Button>
-        <Button
-          variant="outlined"
-          className="admin__btn"
-          onClick={() => setAddNewProduct(false)}
-        >
-          Update Product
-        </Button>
-      </ThemeProvider> */}
     </div>
   );
 };
