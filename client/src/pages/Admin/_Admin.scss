@@ -1,12 +1,12 @@
 .admin {
+  width: 90vw;
+  margin: 5rem auto 3rem auto;
+
   &__search {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-
-  width: 90vw;
-  margin: 5rem auto 3rem auto;
 
   .page-title {
     font-family: $fnt-logo !important;
@@ -36,7 +36,7 @@
         color: $clr-text;
         font-size: 2.5rem;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
       }
     }
   }

@@ -107,31 +107,6 @@
     font-size: 1.4rem;
   }
 
-  &__amount {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: auto 2rem auto;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    text-align: center;
-    font-size: 1.6rem;
-
-    .add {
-      height: 2rem !important;
-      width: 2rem !important;
-      cursor: pointer;
-      border: 1px solid $clr-primary;
-    }
-
-    .remove {
-      height: 2rem !important;
-      width: 2rem !important;
-      cursor: pointer;
-      border: 1px solid $clr-primary;
-    }
-  }
-
   .product__btn__cart {
     color: #fff;
   }
@@ -140,6 +115,7 @@
     grid-column: 1 / -1;
     width: 99%;
     display: flex;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     background-color: $clr-secondary;

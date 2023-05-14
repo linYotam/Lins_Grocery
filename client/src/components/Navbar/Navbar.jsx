@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
-import { PersonOutlined, FavoriteBorderOutlined, ShoppingCartOutlined } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
-import SearchBtn from '../SearchBtn/SearchBtn';
-import Login from '../Login/Login';
+import React, { useState } from "react";
+import {
+  PersonOutlined,
+  FavoriteBorderOutlined,
+  ShoppingCartOutlined,
+} from "@mui/icons-material";
+import { Link } from "react-router-dom";
+import SearchBtn from "../SearchBtn/SearchBtn";
+import Login from "../Login/Login";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const totalProducts = useSelector((state) => state.cart.totalCount);
   const [isSignOpen, setIsSignOpen] = useState(false);
 
   const openSignPage = () => {
@@ -53,10 +59,10 @@ const Navbar = () => {
               <SearchBtn />
               <PersonOutlined className="icon" onClick={openSignPage} />
               <FavoriteBorderOutlined className="icon" />
-              <div className="cartIcon">
+              <Link to="/cart" className="link cartIcon">
                 <ShoppingCartOutlined className="icon" />
-                <span>0</span>
-              </div>
+                <span>{totalProducts}</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,0 +1,51 @@
+.cart {
+  width: 90vw;
+  margin: 5rem auto 3rem auto;
+
+  .page-title {
+    font-family: $fnt-logo !important;
+    text-align: center;
+  }
+
+  .cart-product {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        color: $clr-secondary;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .data {
+        font-weight: 300;
+      }
+    }
+  }
+
+  .cart-image {
+    width: 15rem;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 3rem;
+    color: $clr-secondary;
+    cursor: pointer;
+    transform: all 0.3s;
+    &:hover {
+      color: $clr-secondary-hover;
+    }
+  }
+
+  .info {
+    font-size: 1.6rem !important;
+  }
+}

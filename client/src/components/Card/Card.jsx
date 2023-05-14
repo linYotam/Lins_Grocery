@@ -1,18 +1,17 @@
 import {
-  Add,
   BalanceOutlined,
   Calculate,
   CategoryOutlined,
   HiveOutlined,
   LocalFlorist,
-  Remove,
   SellOutlined,
   ShoppingCartOutlined,
 } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
-// import axios from 'axios';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { updateCart } from "../../features/cart/cartSlice";
+import ProductAmount from "../ProductAmount/ProductAmount";
 
 const Card = ({ product }) => {
   const {
@@ -35,6 +34,7 @@ const Card = ({ product }) => {
   const [categoryName, setCategoryName] = useState("");
   const [currentPrice, setCurrentPrice] = useState(0);
 
+  const dispatch = useDispatch();
   const categories = useSelector((state) => state.categories.value);
 
   useEffect(() => {
@@ -56,20 +56,16 @@ const Card = ({ product }) => {
     setIsModalOpen(false);
   };
 
-  const addAmount = () => {
-    setAmount((prev) => prev + 1);
-  };
-
-  const removeAmount = () => {
-    if (amount > 0) setAmount((prev) => prev - 1);
-  };
-
   const toggleFavorite = () => {
     setIsFavorite(!isFavorite);
   };
 
   const handleImageError = () => {
     setImgError(true);
+  };
+
+  const handleUpdateCart = () => {
+    dispatch(updateCart({ product, amount }));
   };
 
   return (
@@ -133,16 +129,10 @@ const Card = ({ product }) => {
           <Calculate className="product__icon" />
           <p>${currentPrice * amount}</p>
         </div>
-
-        <div className="product__amount">
-          <Add className="add" onClick={addAmount} />
-          <div className="product__amount__total">{amount}</div>
-          <Remove className="remove" onClick={removeAmount} />
-        </div>
-
-        <button className="btn product__btn">
+        <ProductAmount amount={amount} setAmount={setAmount} />
+        <button className="btn product__btn" onClick={handleUpdateCart}>
           <ShoppingCartOutlined className="product__btn__cart" />
-          Add to cart
+          Update cart
         </button>
       </div>
 

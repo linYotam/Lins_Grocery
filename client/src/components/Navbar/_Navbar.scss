@@ -14,7 +14,7 @@
     .link {
       color: $clr-primary;
       text-decoration: none;
-      font-family: 'Brusher', sans-serif;
+      font-family: "Brusher", sans-serif;
 
       &:hover {
         color: $clr-primary-hover;
@@ -79,6 +79,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: $fnt-kanit;
           }
         }
       }

@@ -1,0 +1,24 @@
+.product__amount {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 2rem auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+
+  .add {
+    height: 2rem !important;
+    width: 2rem !important;
+    cursor: pointer;
+    border: 1px solid $clr-primary;
+  }
+
+  .remove {
+    height: 2rem !important;
+    width: 2rem !important;
+    cursor: pointer;
+    border: 1px solid $clr-primary;
+  }
+}

@@ -6,7 +6,7 @@ $switchAT: 1.2s;
 $inputW: 35rem;
 $btnH: 3.6rem;
 
-$diffRatio: ($contW - $imgW) / $contW;
+$diffRatio: (($contW - $imgW) / $contW);
 
 @mixin signUpActive {
   .cont.s--signup & {
@@ -94,19 +94,19 @@ $diffRatio: ($contW - $imgW) / $contW;
   padding-top: 360px;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     top: 0;
     width: $contW;
     height: 100%;
-    background-image: url('../../../public/images/sign.jpg');
+    background-image: url("../../../public/images/sign.jpg");
     background-size: cover;
     transition: transform $switchAT ease-in-out;
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -176,7 +176,7 @@ $diffRatio: ($contW - $imgW) / $contW;
     }
 
     &:after {
-      content: '';
+      content: "";
       z-index: 2;
       position: absolute;
       left: 0;
