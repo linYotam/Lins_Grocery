@@ -11,29 +11,31 @@ public partial class Product
 
     public string ProductName { get; set; } = null!;
 
-    public int CategoryId { get; set; } = 0;    
+    public int CategoryId { get; set; }
 
     public string ProductDescription { get; set; } = null!;
 
-    public decimal Weight { get; set; } = 0;
+    public decimal ProductWeight { get; set; }
 
-    public string WeightMsr { get; set; } = "";
+    public string ProductWeightMsr { get; set; } = null!;
 
-    public decimal UnitPrice { get; set; } = 0;
+    public decimal UnitPrice { get; set; }
 
-    public string ImageData { get; set; } = "";
+    public string ImageData { get; set; } = null!;
 
-    public short UnitsInStock { get; set; } = 0;
+    public short UnitsInStock { get; set; }
 
-    public int QuantityPerUnit { get; set; } = 0;
+    public int QuantityPerUnit { get; set; }
 
-    public bool Discontinued { get; set; } = false;
+    public bool Discontinued { get; set; }
 
-    public int Discount { get; set; } = 0;
+    public int Discount { get; set; }
 
-    public string Extra{ get; set; } = "";
+    public string? ProductExtra { get; set; }
 
-    public decimal CurrentPrice { get; set; } = 0;
+    public decimal? ProductCurrentPrice { get; set; }
 
     public virtual Category Category { get; set; } = null!;
+
+    public virtual ICollection<UserCart> UserCarts { get; set; } = new List<UserCart>();
 }

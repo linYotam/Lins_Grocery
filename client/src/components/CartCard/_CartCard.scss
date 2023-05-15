@@ -1,0 +1,31 @@
+.cart-product {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      color: $clr-secondary;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .data {
+      font-weight: 300;
+    }
+  }
+}
+
+.info {
+  font-size: 1.4rem !important;
+
+  .update-amount--btn {
+    margin-top: 1rem;
+  }
+}

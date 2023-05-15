@@ -9,13 +9,15 @@ public partial class User
 
     public string UserName { get; set; } = null!;
 
-    public string UserPassword { get; set; } = null!;
+    public string UserEmail { get; set; } = null!;
 
-    public string UserEmail { get; set; } = null!; 
+    public string UserPassword { get; set; } = null!;
 
     public string? UserType { get; set; }
 
-    public string UserToken { get; set; } = null!;  
+    public string JwtToken { get; set; } = null!;
 
     public virtual Employee? Employee { get; set; }
+
+    public virtual ICollection<UserCart> UserCarts { get; set; } = new List<UserCart>();
 }

@@ -40,7 +40,7 @@ namespace Grocery
             Email = user.UserEmail;
             Password= user.UserPassword;
             Type = user.UserType;
-            JwtToken = user.UserToken;        
+            JwtToken = user.JwtToken;        
         }
 
         public User ConvertToUser()
@@ -53,7 +53,7 @@ namespace Grocery
                 UserEmail = Email,
                 UserPassword = Password,
                 UserType = Type,
-                UserToken = JwtToken,      
+                JwtToken = JwtToken,      
             };
         }
 

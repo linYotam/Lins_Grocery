@@ -63,8 +63,8 @@ namespace Grocery
             Title = product.ProductTitle;
             Name = product.ProductName;
             Description = product.ProductDescription;
-            Weight = product.Weight;
-            WeightMsr= product.WeightMsr;
+            Weight = product.ProductWeight;
+            WeightMsr= product.ProductWeightMsr;
             Price = product.UnitPrice;
             ImageData = product.ImageData;
             Stock = product.UnitsInStock;
@@ -72,8 +72,8 @@ namespace Grocery
             Discontinued = product.Discontinued;
             CategoryId = product.CategoryId;
             Discount = product.Discount;
-            Extra  = product.Extra;
-            CurrentPrice = product.CurrentPrice;
+            Extra  = product.ProductExtra;
+            CurrentPrice = (decimal)product.ProductCurrentPrice;
         }
 
         public Product ConvertToProduct()
@@ -84,8 +84,8 @@ namespace Grocery
                 ProductTitle = Title,
                 ProductName = Name,
                 ProductDescription = Description,
-                Weight = Weight,
-                WeightMsr = WeightMsr,
+                ProductWeight = Weight,
+                ProductWeightMsr = WeightMsr,
                 UnitPrice = Price,
                 ImageData = ImageData,
                 UnitsInStock = Stock,
@@ -93,8 +93,8 @@ namespace Grocery
                 Discontinued = Discontinued,
                 CategoryId = CategoryId,
                 Discount = Discount,
-                Extra = Extra,
-                CurrentPrice = CurrentPrice
+                ProductExtra = Extra,
+                ProductCurrentPrice = CurrentPrice
         };
         }
 

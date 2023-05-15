@@ -3877,19 +3877,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yotam\\.nuget\\packages\\": {}
+    "C:\\Users\\linyo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
+      "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
       "projectName": "1 - Data Access Layer",
-      "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
-      "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\1 - Data Access Layer\\obj\\",
+      "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\1 - Data Access Layer\\1 - Data Access Layer.csproj",
+      "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
+      "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\1 - Data Access Layer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

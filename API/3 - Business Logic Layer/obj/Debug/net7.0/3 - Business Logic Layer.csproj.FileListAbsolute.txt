@@ -32,3 +32,20 @@ C:\Users\Yotam\Desktop\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.
 C:\Users\Yotam\Desktop\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\refint\3 - Business Logic Layer.dll
 C:\Users\Yotam\Desktop\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.pdb
 C:\Users\Yotam\Desktop\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\ref\3 - Business Logic Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\bin\Debug\net7.0\3 - Business Logic Layer.deps.json
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\bin\Debug\net7.0\3 - Business Logic Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\bin\Debug\net7.0\3 - Business Logic Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\bin\Debug\net7.0\1 - Data Access Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\bin\Debug\net7.0\2 - Business Model Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\bin\Debug\net7.0\2 - Business Model Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\bin\Debug\net7.0\1 - Data Access Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.csproj.AssemblyReference.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.AssemblyInfoInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.AssemblyInfo.cs
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.csproj.CoreCompileInputs.cache
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.csproj.CopyComplete
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\refint\3 - Business Logic Layer.dll
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\3 - Business Logic Layer.pdb
+E:\מסמכים\Programming\Full Stack .NET React project - Yotam\Lins_Grocery\API\3 - Business Logic Layer\obj\Debug\net7.0\ref\3 - Business Logic Layer.dll

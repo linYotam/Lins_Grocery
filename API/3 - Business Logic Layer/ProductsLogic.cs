@@ -41,16 +41,16 @@ namespace Grocery
             product.ProductName = productModel.Name;
             product.CategoryId = productModel.CategoryId;
             product.ProductDescription = productModel.Description;
-            product.Weight = productModel.Weight;
-            product.WeightMsr = productModel.WeightMsr;
+            product.ProductWeight = productModel.Weight;
+            product.ProductWeightMsr = productModel.WeightMsr;
             product.UnitPrice = productModel.Price;
             product.ImageData = productModel.ImageData;
             product.UnitsInStock = productModel.Stock;
             product.QuantityPerUnit = productModel.Quantity;
             product.Discontinued = productModel.Discontinued;
             product.Discount = productModel.Discount;
-            product.Extra = productModel.Extra;
-            product.CurrentPrice = productModel.CurrentPrice;
+            product.ProductExtra = productModel.Extra;
+            product.ProductCurrentPrice = productModel.CurrentPrice;
 
             await DB.SaveChangesAsync();
 
@@ -70,9 +70,9 @@ namespace Grocery
             product.CategoryId = productModel.CategoryId;
             if (productModel.Description != null)  
                 product.ProductDescription = productModel.Description;
-            product.Weight = productModel.Weight;
+            product.ProductWeight = productModel.Weight;
             if (productModel.WeightMsr != null)  
-                product.WeightMsr = productModel.WeightMsr;
+                product.ProductWeightMsr = productModel.WeightMsr;
             product.UnitPrice = productModel.Price;
             if (productModel.ImageData != null && productModel.ImageData != "")  
                 product.ImageData = productModel.ImageData;
@@ -81,9 +81,9 @@ namespace Grocery
             product.Discontinued = productModel.Discontinued;
             product.Discount = productModel.Discount;
             if (productModel.Extra != null)  
-                product.Extra = productModel.Extra;
+                product.ProductExtra = productModel.Extra;
             if (productModel.CurrentPrice != null)
-                product.CurrentPrice = productModel.CurrentPrice;
+                product.ProductCurrentPrice = productModel.CurrentPrice;
 
             await DB.SaveChangesAsync();
 

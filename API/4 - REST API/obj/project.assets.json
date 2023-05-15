@@ -4154,19 +4154,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yotam\\.nuget\\packages\\": {}
+    "C:\\Users\\linyo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
+      "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
       "projectName": "4 - REST API",
-      "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
-      "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\obj\\",
+      "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
+      "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
+      "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\4 - REST API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4180,8 +4180,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
-              "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj"
+            "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
+              "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj"
             }
           }
         }

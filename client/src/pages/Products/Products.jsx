@@ -7,13 +7,13 @@ import { updateProducts } from '../../features/products/productsSlice';
 import { updateCategories } from '../../features/categories/categoriesSlice';
 import axios from 'axios';
 import Loading from '../../components/Loading/Loading';
+import { loadCart } from '../../features/cart/cartSlice';
 
 const Products = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log();
     axios
       .get('https://localhost:7062/api/Categories')
       .then(response => {
@@ -35,6 +35,27 @@ const Products = () => {
         dispatch(updateFilterProducts([...newData]));
         dispatch(updateProducts([...newData]));
         setLoading(false);
+
+        const userId = 2;
+
+        console.log('newData: ', newData);
+
+        axios
+          .get(`https://localhost:7062/api/Cart/${userId}`)
+          .then(response => {
+            const userCart = response.data;
+
+            const cart = userCart.map(cartItem => {
+              const { productId, quantity } = cartItem;
+              const product = newData.find(item => item.id === productId);
+              return { product, amount: quantity };
+            });
+
+            dispatch(loadCart(cart));
+          })
+          .catch(error => {
+            console.error(error);
+          });
       })
       .catch(error => {
         console.error(error);

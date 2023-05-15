@@ -7,30 +7,6 @@
     text-align: center;
   }
 
-  .cart-product {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.6rem;
-
-    &-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .title {
-        color: $clr-secondary;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-
-      .data {
-        font-weight: 300;
-      }
-    }
-  }
-
   .cart-image {
     width: 15rem;
   }
@@ -44,8 +20,11 @@
       color: $clr-secondary-hover;
     }
   }
-
-  .info {
-    font-size: 1.6rem !important;
+  &__sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
   }
 }
