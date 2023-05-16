@@ -1,6 +1,9 @@
 .cart {
   width: 90vw;
   margin: 5rem auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
   .page-title {
     font-family: $fnt-logo !important;
@@ -13,18 +16,34 @@
 
   .MuiSvgIcon-root {
     font-size: 3rem;
-    color: $clr-secondary;
     cursor: pointer;
     transform: all 0.3s;
-    &:hover {
-      color: $clr-secondary-hover;
-    }
   }
   &__sum {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: auto max-content;
+
+    &-info {
+      display: grid;
+      grid-template-columns: 20rem 10rem;
+      // justify-content: flex-end;
+      // align-items: flex-start;
+      gap: 2rem;
+      font-family: $fnt-kanit;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: $clr-text;
+
+      .data {
+        margin-left: auto;
+      }
+
+      .order-btn {
+        grid-column: span 2;
+        &:hover {
+          background-color: #4d836e;
+        }
+      }
+    }
   }
 }
