@@ -1,4 +1,6 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -30,7 +32,7 @@ namespace Grocery
             SecurityTokenDescriptor securityTokenDescriptor = new SecurityTokenDescriptor();
             securityTokenDescriptor.Subject = claimsIdentity;
             securityTokenDescriptor.SigningCredentials = signingCredentials;
-            securityTokenDescriptor.Expires = DateTime.UtcNow.AddDays(1);
+            securityTokenDescriptor.Expires = DateTime.UtcNow.AddHours(3);
 
             // Token:
             JwtSecurityTokenHandler jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
@@ -39,6 +41,22 @@ namespace Grocery
 
             return token;
 
+        }
+
+        public void SetAuthenticationOptions(AuthenticationOptions options)
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        }
+
+        public void SetBearerOptions(JwtBearerOptions options)
+        {
+            TokenValidationParameters tokenValidationParameters = new TokenValidationParameters();
+            tokenValidationParameters.IssuerSigningKey = symmetricSecurityKey;
+            tokenValidationParameters.ValidateIssuer = false;
+            tokenValidationParameters.ValidateAudience = false;
+            tokenValidationParameters.ClockSkew = TimeSpan.Zero; //Don't add 5 minutes by default
+            options.TokenValidationParameters = tokenValidationParameters;
         }
     }
 }

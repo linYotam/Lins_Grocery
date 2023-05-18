@@ -1,16 +1,13 @@
-import React, { useState } from "react";
-import {
-  PersonOutlined,
-  FavoriteBorderOutlined,
-  ShoppingCartOutlined,
-} from "@mui/icons-material";
-import { Link } from "react-router-dom";
-import SearchBtn from "../SearchBtn/SearchBtn";
-import Login from "../Login/Login";
-import { useSelector } from "react-redux";
+import React, { useState } from 'react';
+import { PersonOutlined, FavoriteBorderOutlined, ShoppingCartOutlined } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
+import SearchBtn from '../SearchBtn/SearchBtn';
+import Auth from '../Auth/Auth';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
-  const totalProducts = useSelector((state) => state.cart.totalCount);
+  const totalProducts = useSelector(state => state.cart.totalCount);
+
   const [isSignOpen, setIsSignOpen] = useState(false);
 
   const openSignPage = () => {
@@ -67,7 +64,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {isSignOpen && <Login closeSignPage={closeSignPage} />}
+      {isSignOpen && <Auth closeSignPage={closeSignPage} />}
     </>
   );
 };

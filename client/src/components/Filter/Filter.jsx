@@ -11,7 +11,7 @@ import {
   createTheme,
 } from '@mui/material';
 import { useDispatch } from 'react-redux';
-import { updateFilterProducts } from '../../features/filterProducts/filterProductsSlice';
+import { updateFilterProducts } from '../../reducers/filterProductsSlice';
 import { useSelector } from 'react-redux';
 
 const sortTypes = [

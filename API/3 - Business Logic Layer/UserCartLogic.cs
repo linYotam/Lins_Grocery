@@ -14,6 +14,11 @@ namespace Grocery
     public class UserCartLogic : BaseLogic
     {
 
+        public UserCartLogic(DbContextOptions<LinsGroceryContext> options): base(options)
+        {
+            
+        }
+
         public async Task<UserCartModel> AddCartItem(UserCartModel userCartModel) 
         {
             //Check if the product already exist in cart

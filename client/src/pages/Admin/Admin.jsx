@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import {
   Typography,
   Box,
@@ -10,9 +10,9 @@ import {
   Select,
   TextField,
   Autocomplete,
-} from "@mui/material";
-import axios from "axios";
-import imageCompression from "browser-image-compression";
+} from '@mui/material';
+import axios from 'axios';
+import imageCompression from 'browser-image-compression';
 import {
   AttachMoney,
   CloudUploadOutlined,
@@ -20,76 +20,76 @@ import {
   Percent,
   PhotoCamera,
   SearchOutlined,
-} from "@mui/icons-material";
-import CallToast from "../../components/Toaster/CallToaster";
-import { ToastContainer } from "react-toastify";
-import { updateProducts } from "../../features/products/productsSlice";
+} from '@mui/icons-material';
+import CallToast from '../../components/Toaster/CallToaster';
+import { ToastContainer } from 'react-toastify';
+import { updateProducts } from '../../reducers/productsSlice';
 
-const weightUnits = ["kg", "g", "l", "ml"];
+const weightUnits = ['kg', 'g', 'l', 'ml'];
 
 const Admin = () => {
-  const products = useSelector((state) => state.products.value);
+  const products = useSelector(state => state.products.value);
   const dispatch = useDispatch();
-  const [productTitle, setProductTitle] = useState("");
-  const [productName, setProductName] = useState("");
-  const [productDescription, setProductDescription] = useState("");
+  const [productTitle, setProductTitle] = useState('');
+  const [productName, setProductName] = useState('');
+  const [productDescription, setProductDescription] = useState('');
   const [productPrice, setProductPrice] = useState(0);
-  const [categoryValue, setCategoryValue] = useState("");
+  const [categoryValue, setCategoryValue] = useState('');
   const [categories, setCategories] = useState([]);
   const [productStock, setProductStock] = useState(0);
   const [productQuantityPerUnit, setProductQuantityPerUnit] = useState(1);
   const [productDiscontinued, setProductDiscontinued] = useState(false);
   const [productDiscount, setProductDiscount] = useState(0);
-  const [productWeight, setProductWeight] = useState("");
-  const [productWeightMsr, setProductWeightMsr] = useState("kg");
-  const [productExtra, setProductExtra] = useState("");
+  const [productWeight, setProductWeight] = useState('');
+  const [productWeightMsr, setProductWeightMsr] = useState('kg');
+  const [productExtra, setProductExtra] = useState('');
   const [productCurrentPrice, setProductCurrentPrice] = useState(0);
   const [imageFile, setImageFile] = useState(null);
-  const [imageFileName, setImageFileName] = useState("");
+  const [imageFileName, setImageFileName] = useState('');
   const [productId, setProductId] = useState(0);
   const [image, setImage] = useState(null);
   const [matchingProducts, setMatchingProducts] = useState([]);
   const [product, setProduct] = useState({});
   const [clearValue, setClearValue] = useState(false);
-  const [title, setTitle] = useState("Add New Product");
+  const [title, setTitle] = useState('Add New Product');
 
   //! GET CATEGORIES
   useEffect(() => {
     axios
-      .get("https://localhost:7062/api/Categories")
-      .then((response) => {
+      .get('https://localhost:7062/api/Categories')
+      .then(response => {
         setCategories(response.data);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error(error);
       });
   }, []);
 
   //! PRODUCT DEFAULT VALUES
   const setDefaultValues = () => {
-    setProductTitle("");
-    setProductName("");
-    setProductDescription("");
+    setProductTitle('');
+    setProductName('');
+    setProductDescription('');
     setProductPrice(0);
-    setCategoryValue("");
+    setCategoryValue('');
     setProductStock(0);
     setProductQuantityPerUnit(1);
     setProductDiscontinued(false);
     setProductDiscount(0);
-    setProductWeight("");
-    setProductWeightMsr("kg");
+    setProductWeight('');
+    setProductWeightMsr('kg');
     setImageFile(null);
-    setImageFileName("");
+    setImageFileName('');
     setImage(null);
-    setProductExtra("");
+    setProductExtra('');
     setProductCurrentPrice(0);
     setProductId(0);
-    setTitle("Add New Product");
-    setClearValue((prev) => !prev);
+    setTitle('Add New Product');
+    setClearValue(prev => !prev);
   };
 
   //! COMPRESS IMAGE
-  const compressImage = async (event) => {
+  const compressImage = async event => {
     const imageFile = event.target.files[0];
     setImageFileName(imageFile.name);
 
@@ -115,86 +115,80 @@ const Admin = () => {
   //! LOAD PRODUCTS
   const loadProducts = () => {
     axios
-      .get("https://localhost:7062/api/Products")
-      .then((response) => {
-        const newData = response.data.map((product) => {
+      .get('https://localhost:7062/api/Products')
+      .then(response => {
+        const newData = response.data.map(product => {
           product.imageData = `https://localhost:7062${product.imageData}`;
           return product;
         });
         dispatch(updateProducts([...newData]));
         // setLoading(false);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error(error);
       });
   };
 
   //! ADD/UPDATE PRODUCT TO DB
-  const handleAddNewProduct = (e) => {
+  const handleAddNewProduct = e => {
     e.preventDefault();
 
     //todo Check all the required fields have valid data
 
     const formData = new FormData();
-    formData.append("title", productTitle);
-    formData.append("name", productName);
-    formData.append("categoryId", categoryValue);
-    formData.append("description", productDescription);
-    formData.append("weight", parseFloat(productWeight));
-    formData.append("weightMsr", productWeightMsr);
-    formData.append("price", productPrice);
-    formData.append("imageData", imageFile);
-    formData.append("imageName", imageFileName);
-    formData.append("stock", productStock);
-    formData.append("quantity", productQuantityPerUnit);
-    formData.append("discount", productDiscount);
-    formData.append("discontinued", productDiscontinued);
-    formData.append("extra", productExtra);
-    formData.append("currentPrice", productCurrentPrice);
+    formData.append('title', productTitle);
+    formData.append('name', productName);
+    formData.append('categoryId', categoryValue);
+    formData.append('description', productDescription);
+    formData.append('weight', parseFloat(productWeight));
+    formData.append('weightMsr', productWeightMsr);
+    formData.append('price', productPrice);
+    formData.append('imageData', imageFile);
+    formData.append('imageName', imageFileName);
+    formData.append('stock', productStock);
+    formData.append('quantity', productQuantityPerUnit);
+    formData.append('discount', productDiscount);
+    formData.append('discontinued', productDiscontinued);
+    formData.append('extra', productExtra);
+    formData.append('currentPrice', productCurrentPrice);
 
-    if (productId > 0) formData.append("id", productId);
+    if (productId > 0) formData.append('id', productId);
 
     //! Create new product
     if (productId === 0) {
       axios
-        .post("https://localhost:7062/api/Products", formData)
-        .then((response) => {
+        .post('https://localhost:7062/api/Products', formData)
+        .then(response => {
           setProductId(response.data.id);
-          CallToast(
-            `The product "${productTitle}" added successfully to the Database`,
-            "success"
-          );
+          CallToast(`The product "${productTitle}" added successfully to the Database`, 'success');
           setDefaultValues();
           loadProducts();
         })
-        .catch((error) => {
+        .catch(error => {
           console.error(error);
         });
       //! Update product
     } else {
       axios
-        .patch("https://localhost:7062/api/Products", formData)
-        .then((response) => {
-          CallToast(
-            `The product "${productTitle}" updated successfully in the Database`,
-            "success"
-          );
+        .patch('https://localhost:7062/api/Products', formData)
+        .then(response => {
+          CallToast(`The product "${productTitle}" updated successfully in the Database`, 'success');
           // Clear the autocomplete field
-          setClearValue((prev) => !prev);
+          setClearValue(prev => !prev);
           loadProducts();
         })
-        .catch((error) => {
+        .catch(error => {
           console.error(error);
         });
     }
   };
 
   //! UPDATE CURRENT PRICE
-  const updateProductPrice = (e) => {
+  const updateProductPrice = e => {
     let priceValue = 0;
     let discountValue = 0;
 
-    if (e.target.name === "price") {
+    if (e.target.name === 'price') {
       priceValue = e.target.value;
       discountValue = productDiscount;
 
@@ -237,21 +231,18 @@ const Admin = () => {
     setProductId(product.id);
     setImage(product.imageData);
 
-    setTitle("Update Product");
+    setTitle('Update Product');
   };
 
   //! AUTOCOMPLETE RESULTS
-  const handleInputChange = (event) => {
+  const handleInputChange = event => {
     const userInput = event.target.value;
-    let matchingProducts = "";
+    let matchingProducts = '';
 
-    matchingProducts = products.filter((product) => {
+    matchingProducts = products.filter(product => {
       const productName = product.title.toLowerCase();
       const lowerCaseUserInput = userInput.toLowerCase();
-      return (
-        product.id.toString().includes(userInput) ||
-        productName.includes(lowerCaseUserInput)
-      );
+      return product.id.toString().includes(userInput) || productName.includes(lowerCaseUserInput);
     });
 
     setMatchingProducts(matchingProducts);
@@ -267,28 +258,16 @@ const Admin = () => {
         {/* //! SEARCH SECTION */}
 
         <aside className="admin__search">
-          <Typography
-            variant="h4"
-            gutterBottom
-            className="admin__search-header"
-          >
+          <Typography variant="h4" gutterBottom className="admin__search-header">
             Search Product
           </Typography>
 
           <Autocomplete
             key={clearValue}
             options={matchingProducts}
-            getOptionLabel={(option) =>
-              option.id.toString() + " - " + option.title
-            }
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Product"
-                variant="outlined"
-                fullWidth
-                onChange={handleInputChange}
-              />
+            getOptionLabel={option => option.id.toString() + ' - ' + option.title}
+            renderInput={params => (
+              <TextField {...params} label="Product" variant="outlined" fullWidth onChange={handleInputChange} />
             )}
             onChange={(e, value) => {
               if (value !== null) setProduct(value);
@@ -303,8 +282,7 @@ const Admin = () => {
             // color="neutral"
             size="large"
             startIcon={<SearchOutlined />}
-            style={{ backgroundColor: "#c29e5b", color: "white" }}
-          >
+            style={{ backgroundColor: '#c29e5b', color: 'white' }}>
             Search Product
           </Button>
         </aside>
@@ -316,25 +294,25 @@ const Admin = () => {
           <TextField
             className="grid__container-title"
             inputProps={{
-              style: { fontSize: "14px", width: "16rem" },
+              style: { fontSize: '14px', width: '16rem' },
             }}
             label="Product Title"
             variant="outlined"
             required
             value={productTitle}
-            onChange={(e) => {
+            onChange={e => {
               setProductTitle(e.target.value);
             }}
           />
 
           {/* //! NAME */}
           <TextField
-            inputProps={{ style: { fontSize: "14px", width: "16rem" } }}
+            inputProps={{ style: { fontSize: '14px', width: '16rem' } }}
             label="Product Name"
             variant="outlined"
             required
             value={productName}
-            onChange={(e) => {
+            onChange={e => {
               setProductName(e.target.value);
             }}
           />
@@ -346,11 +324,10 @@ const Admin = () => {
               id="category-select"
               label="Product Category"
               value={categoryValue}
-              onChange={(e) => {
+              onChange={e => {
                 setCategoryValue(e.target.value);
-              }}
-            >
-              {categories.map((category) => (
+              }}>
+              {categories.map(category => (
                 <MenuItem key={category.id} value={category.id}>
                   {category.name}
                 </MenuItem>
@@ -361,7 +338,7 @@ const Admin = () => {
           {/* //! STOCK */}
           <TextField
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
               min: 0,
               step: 1,
             }}
@@ -370,7 +347,7 @@ const Admin = () => {
             type="number"
             required
             value={productStock}
-            onChange={(e) => {
+            onChange={e => {
               setProductStock(parseInt(e.target.value));
             }}
           />
@@ -378,7 +355,7 @@ const Admin = () => {
           {/* //! QUANTITY */}
           <TextField
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
               min: 1,
               step: 1,
             }}
@@ -387,7 +364,7 @@ const Admin = () => {
             type="number"
             required
             value={productQuantityPerUnit}
-            onChange={(e) => {
+            onChange={e => {
               setProductQuantityPerUnit(parseInt(e.target.value));
             }}
           />
@@ -398,7 +375,7 @@ const Admin = () => {
               startAdornment: <AttachMoney />,
             }}
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
               min: 0,
             }}
             label="Price"
@@ -413,7 +390,7 @@ const Admin = () => {
           {/* //! DISCOUNT */}
           <TextField
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
               min: 0,
               max: 100,
             }}
@@ -435,7 +412,7 @@ const Admin = () => {
               startAdornment: <AttachMoney />,
             }}
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
               min: 0,
             }}
             disabled
@@ -450,7 +427,7 @@ const Admin = () => {
           <TextField
             className="grid__container-description"
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
             }}
             label="Product Description"
             variant="outlined"
@@ -458,7 +435,7 @@ const Admin = () => {
             multiline
             rows={15}
             value={productDescription}
-            onChange={(e) => {
+            onChange={e => {
               setProductDescription(e.target.value);
             }}
           />
@@ -466,7 +443,7 @@ const Admin = () => {
           {/* //! WEIGHT */}
           <TextField
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
               step: 0.01,
             }}
             label="Weight"
@@ -474,24 +451,21 @@ const Admin = () => {
             type="number"
             required
             value={productWeight}
-            onChange={(e) => {
+            onChange={e => {
               setProductWeight(e.target.value);
             }}
           />
 
           {/* //! WEIGHT MSR */}
           <FormControl required>
-            <InputLabel htmlFor="weightMsr-select">
-              Product Weight Units
-            </InputLabel>
+            <InputLabel htmlFor="weightMsr-select">Product Weight Units</InputLabel>
             <Select
               id="category-select"
               label="Product Weight Units"
               value={productWeightMsr}
-              onChange={(e) => {
+              onChange={e => {
                 setProductWeightMsr(e.target.value);
-              }}
-            >
+              }}>
               {weightUnits.map((unit, index) => (
                 <MenuItem key={index} value={unit}>
                   {unit}
@@ -506,11 +480,11 @@ const Admin = () => {
               className="grid__container-image-box"
               component="img"
               sx={{
-                maxHeight: "17rem",
-                maxWidth: "30rem",
+                maxHeight: '17rem',
+                maxWidth: '30rem',
               }}
               alt="The house from the offer."
-              src={image || "/images/placeholder.png"}
+              src={image || '/images/placeholder.png'}
             />
 
             <label htmlFor="image-upload" className="image_btn">
@@ -525,13 +499,8 @@ const Admin = () => {
                 Upload Image
               </Button>
             </label>
-            <Box sx={{ display: "none" }}>
-              <input
-                type="file"
-                id="image-upload"
-                accept="image/*"
-                onChange={compressImage}
-              />
+            <Box sx={{ display: 'none' }}>
+              <input type="file" id="image-upload" accept="image/*" onChange={compressImage} />
             </Box>
           </div>
 
@@ -539,13 +508,13 @@ const Admin = () => {
           <TextField
             className="grid__container-title"
             inputProps={{
-              style: { fontSize: "14px", width: "16rem" },
+              style: { fontSize: '14px', width: '16rem' },
             }}
             label="Product Extra"
             variant="outlined"
             required
             value={productExtra}
-            onChange={(e) => {
+            onChange={e => {
               setProductExtra(e.target.value);
             }}
           />
@@ -553,7 +522,7 @@ const Admin = () => {
           {/* //! ID */}
           <TextField
             inputProps={{
-              style: { fontSize: "14px" },
+              style: { fontSize: '14px' },
               min: 1,
               step: 1,
             }}
@@ -572,10 +541,9 @@ const Admin = () => {
               id="Discontinued-select"
               label="Discontinued"
               value={productDiscontinued}
-              onChange={(e) => {
+              onChange={e => {
                 setProductDiscontinued(e.target.value);
-              }}
-            >
+              }}>
               <MenuItem value={true}>True</MenuItem>
               <MenuItem value={false}>False</MenuItem>
             </Select>
@@ -589,8 +557,7 @@ const Admin = () => {
             variant="contained"
             color="success"
             size="large"
-            startIcon={<CloudUploadOutlined />}
-          >
+            startIcon={<CloudUploadOutlined />}>
             Upload Product
           </Button>
           <Button
@@ -601,8 +568,7 @@ const Admin = () => {
             variant="contained"
             color="secondary"
             size="large"
-            startIcon={<HighlightOffOutlined />}
-          >
+            startIcon={<HighlightOffOutlined />}>
             Clear Product
           </Button>
         </form>

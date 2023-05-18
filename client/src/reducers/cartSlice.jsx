@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
   items: [], // array of {product, quantity} objects
@@ -7,16 +7,13 @@ const initialState = {
 };
 
 export const cartSlice = createSlice({
-  name: "cart",
+  name: 'cart',
   initialState,
   reducers: {
     loadCart: (state, action) => {
-      console.log("payload: ", action.payload);
+      // console.log("payload: ", action.payload);
       state.items = action.payload;
-      state.totalCount = action.payload.reduce(
-        (sum, item) => sum + item.amount,
-        0
-      );
+      state.totalCount = action.payload.reduce((sum, item) => sum + item.amount, 0);
     },
     updateCart: (state, action) => {
       const { product, amount } = action.payload;
@@ -27,9 +24,7 @@ export const cartSlice = createSlice({
         Quantity: amount,
       };
 
-      const existingItemIndex = state.items.findIndex(
-        (item) => item.product.id === product.id
-      );
+      const existingItemIndex = state.items.findIndex(item => item.product.id === product.id);
       //Product is already in the cart
       if (existingItemIndex !== -1) {
         const existingItem = state.items[existingItemIndex];
@@ -41,26 +36,25 @@ export const cartSlice = createSlice({
 
           axios
             .delete(`https://localhost:7062/api/Cart/${product.id}`)
-            .then((response) => {
-              console.log(response);
+            .then(response => {
+              // console.log(response);
             })
-            .catch((error) => {
+            .catch(error => {
               console.error(error);
             });
         } else {
           //Remove previous quantity
-          state.totalCount =
-            state.totalCount - state.items[existingItemIndex].amount + amount;
+          state.totalCount = state.totalCount - state.items[existingItemIndex].amount + amount;
 
           // Product is already in the cart, increase the updated quantity
           state.items[existingItemIndex].amount = amount;
 
           axios
-            .post("https://localhost:7062/api/Cart", UserCartModel)
-            .then((response) => {
-              console.log(response);
+            .post('https://localhost:7062/api/Cart', UserCartModel)
+            .then(response => {
+              // console.log(response);
             })
-            .catch((error) => {
+            .catch(error => {
               console.error(error);
             });
         }
@@ -70,27 +64,25 @@ export const cartSlice = createSlice({
         state.totalCount += amount;
 
         axios
-          .post("https://localhost:7062/api/Cart", UserCartModel)
-          .then((response) => {
-            console.log(response);
+          .post('https://localhost:7062/api/Cart', UserCartModel)
+          .then(response => {
+            // console.log(response);
           })
-          .catch((error) => {
+          .catch(error => {
             console.error(error);
           });
       }
     },
     removeItem: (state, action) => {
       const { product } = action.payload;
-      const existingItemIndex = state.items.findIndex(
-        (item) => item.product.id === product.id
-      );
+      const existingItemIndex = state.items.findIndex(item => item.product.id === product.id);
       if (existingItemIndex !== -1) {
         axios
           .delete(`https://localhost:7062/api/Cart/${product.id}`)
-          .then((response) => {
-            console.log(response);
+          .then(response => {
+            // console.log(response);
           })
-          .catch((error) => {
+          .catch(error => {
             console.error(error);
           });
         const existingItem = state.items[existingItemIndex];

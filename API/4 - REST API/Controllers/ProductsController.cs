@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
@@ -12,15 +13,19 @@ namespace Grocery
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize] // User must have JWT Token (must be logged-in)
     public class ProductsController : ControllerBase, IDisposable
     {
-        private readonly ProductsLogic logic = new ProductsLogic();
+        //private readonly ProductsLogic logic = new ProductsLogic();
         private readonly IWebHostEnvironment _environment;
+        private readonly ProductsLogic logic;
 
-        public ProductsController(IWebHostEnvironment environment)
+        public ProductsController(ProductsLogic productLogic, IWebHostEnvironment environment)
         {
+            logic = productLogic;
             _environment = environment;
         }
+
 
         [HttpGet]
         [Route("api/images")]
@@ -39,6 +44,7 @@ namespace Grocery
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetProducts()
         {
             try
@@ -105,6 +111,7 @@ namespace Grocery
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")] // Logged-in and with type=admin
         public async Task<IActionResult> AddProduct()
         {
             try
@@ -163,6 +170,7 @@ namespace Grocery
         }
 
         [HttpPatch]
+        [Authorize(Roles = "admin")] // Logged-in and with type=admin
         public async Task<IActionResult> UpdatePartialProduct()
         {
             try
@@ -223,6 +231,7 @@ namespace Grocery
 
         [HttpPut]
         [Route("{id}")]
+        [Authorize(Roles = "admin")] // Logged-in and with type=admin
         public async Task<IActionResult> UpdateFullProduct(int id, ProductModel productModel)
         {
             try
@@ -240,27 +249,9 @@ namespace Grocery
             }
         }
 
-        //[HttpPatch]
-        //[Route("{id}")]
-        //public async Task<IActionResult> UpdatePartialProduct(int id, ProductModel productModel)
-        //{
-        //    try
-        //    {
-        //        productModel.ID = id;
-        //        ProductModel? updatedProduct = await logic.UpdatePartialProductAsync(productModel);
-
-        //        if (updatedProduct == null) return NotFound($"id {id} not found.");
-
-        //        return Ok(updatedProduct);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-        //    }
-        //}
-
         [HttpDelete]
         [Route("{id}")]
+        [Authorize(Roles = "admin")] // Logged-in and with type=admin
         public async Task<IActionResult> DeleteProduct(int id)
         {
             try

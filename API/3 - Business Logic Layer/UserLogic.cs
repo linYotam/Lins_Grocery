@@ -13,6 +13,12 @@ namespace Grocery
 {
     public class UserLogic : BaseLogic
     {
+
+        public UserLogic(DbContextOptions<LinsGroceryContext> options) : base(options)
+        {
+            
+        }
+
         private readonly GroceryCrypt crypt = new GroceryCrypt();
 
         public async Task<UserModel?> AddUserAsync(UserModel userModel)
@@ -37,7 +43,7 @@ namespace Grocery
         public async Task<UserModel?> Login(UserModel userModel)
         {
 
-            var user = await DB.Users.FirstOrDefaultAsync(u => u.UserEmail == userModel.Email);
+            var user = await DB.Users.SingleOrDefaultAsync(u => u.UserEmail == userModel.Email);
             if (user != null)
             {
 
@@ -52,6 +58,24 @@ namespace Grocery
             } 
             return null; 
 
+        }
+
+        public async Task<UserModel?> GetUserByCredentials(CredentialsModel credentials)
+        {
+            var user = await DB.Users.SingleOrDefaultAsync(u => u.UserEmail == credentials.Email);
+            if (user != null)
+            {
+
+                string originalPassword = crypt.Decrypt(credentials.Password);
+
+                bool passwordMatches = BCrypt.Net.BCrypt.Verify(originalPassword, user.UserPassword);
+                if (passwordMatches)
+                {
+                    // return user data if login is successful
+                    return new UserModel(user);
+                }
+            }
+            return null;
         }
 
     }

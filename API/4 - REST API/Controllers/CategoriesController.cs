@@ -8,7 +8,14 @@ namespace Grocery
     [ApiController]
     public class CategoriesController : ControllerBase, IDisposable
     {
-        private readonly CategoriesLogic logic = new CategoriesLogic();
+        //private readonly CategoriesLogic logic = new CategoriesLogic();
+
+        private readonly CategoriesLogic logic;
+
+        public CategoriesController(CategoriesLogic categoriesLogic)
+        {
+            logic = categoriesLogic;
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetCategories()

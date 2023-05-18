@@ -10,6 +10,10 @@ namespace Grocery
     public class ProductsLogic : BaseLogic
     {
 
+        public ProductsLogic(DbContextOptions<LinsGroceryContext> options) : base(options)
+        {
+            
+        }
 
         public async Task<List<ProductModel>> GetAllProductsAsync()
         {

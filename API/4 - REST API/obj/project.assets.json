@@ -1309,6 +1309,9 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.30.0"
         },
         "compile": {
@@ -1327,6 +1330,9 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.30.0"
         },
         "compile": {
@@ -1345,6 +1351,9 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.30.0"
         },
         "compile": {
@@ -4150,23 +4159,25 @@
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.Configuration.Json >= 7.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0",
+      "Swashbuckle.AspNetCore.Swagger >= 6.5.0",
+      "Swashbuckle.AspNetCore.SwaggerUI >= 6.5.0",
       "System.IdentityModel.Tokens.Jwt >= 6.30.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yotam\\.nuget\\packages\\": {}
+    "C:\\Users\\linyo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
+      "projectUniqueName": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
       "projectName": "4 - REST API",
-      "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
-      "packagesPath": "C:\\Users\\Yotam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\4 - REST API\\obj\\",
+      "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\4 - REST API\\4 - REST API.csproj",
+      "packagesPath": "C:\\Users\\linyo\\.nuget\\packages\\",
+      "outputPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\4 - REST API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yotam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\linyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4180,8 +4191,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
-              "projectPath": "C:\\Users\\Yotam\\Desktop\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj"
+            "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj": {
+              "projectPath": "E:\\מסמכים\\Programming\\Full Stack .NET React project - Yotam\\Lins_Grocery\\API\\3 - Business Logic Layer\\3 - Business Logic Layer.csproj"
             }
           }
         }
@@ -4217,6 +4228,14 @@
             "version": "[7.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.5.0, )"
+          },
+          "Swashbuckle.AspNetCore.Swagger": {
+            "target": "Package",
+            "version": "[6.5.0, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerUI": {
             "target": "Package",
             "version": "[6.5.0, )"
           },

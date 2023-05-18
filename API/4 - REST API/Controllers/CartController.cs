@@ -8,8 +8,15 @@ namespace Grocery.Controllers
     public class CartController : ControllerBase, IDisposable
     {
 
-        private readonly UserCartLogic logic = new UserCartLogic();
+        //private readonly UserCartLogic logic = new UserCartLogic();
         private readonly IWebHostEnvironment _environment;
+
+        private readonly UserCartLogic logic;
+
+        public CartController(UserCartLogic userCartLogic)
+        {
+            logic = userCartLogic;
+        }
 
         [HttpPost]
         public async Task<IActionResult> AddCartItem(UserCartModel userCartModel)

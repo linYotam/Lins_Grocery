@@ -10,7 +10,7 @@ import {
 import React, { useEffect, useState } from 'react';
 import Modal from '../Modal/Modal';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateCart } from '../../features/cart/cartSlice';
+import { updateCart } from '../../reducers/cartSlice';
 import ProductAmount from '../ProductAmount/ProductAmount';
 
 const Card = ({ product, productQuantity }) => {

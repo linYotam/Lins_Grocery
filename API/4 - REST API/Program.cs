@@ -10,8 +10,11 @@ namespace Grocery
 {
     public class Program
     {
+        public IConfiguration Configuration { get; set; }
+
         public static void Main(string[] args)
         {
+
             // 1. Create Builder
             var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +23,7 @@ namespace Grocery
             {
                 options.AddPolicy("AllowAnyOrigin",
                     builder => builder.AllowAnyOrigin()
-                                      .AllowAnyHeader() 
+                                      .AllowAnyHeader()
                                       .AllowAnyMethod());
             });
             builder.Services.AddControllers();
@@ -29,17 +32,28 @@ namespace Grocery
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            //builder.Services.AddDbContext<LinsGroceryContext>(options =>
-            //{
-            //    options.UseSqlServer(builder.Configuration.GetConnectionString("LinsGroceryConnection"));
-            //});
-
-            //ConfigurationManager configuration = builder.Configuration; // allows both to access and to set up the config
-            //IWebHostEnvironment environment = builder.Environment;
-
             // Configure the IWebHostEnvironment
             builder.Services.AddSingleton<IWebHostEnvironment>(env => builder.Environment);
 
+            builder.Services.AddDbContext<LinsGroceryContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("LinsGroceryConnection"));
+            });
+
+            //var program = new Program();
+            //program.Configuration = builder.Configuration;
+
+            JwtHelper jwtHelper = new JwtHelper(builder.Configuration.GetValue<string>("JWT:Key"));
+
+            builder.Services.AddSingleton(jwtHelper);
+
+            //Enable JWT authentication
+            builder.Services.AddAuthentication(options => jwtHelper.SetAuthenticationOptions(options)).AddJwtBearer(options => jwtHelper.SetBearerOptions(options));
+
+            builder.Services.AddScoped<CategoriesLogic>(); // Change the lifetime to scoped
+            builder.Services.AddScoped<ProductsLogic>();
+            builder.Services.AddScoped<UserCartLogic>();
+            builder.Services.AddScoped<UserLogic>();
 
             // 2. Build
             var app = builder.Build();
@@ -53,6 +67,7 @@ namespace Grocery
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseCors(options => options.AllowAnyOrigin()
