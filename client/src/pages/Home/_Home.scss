@@ -1,0 +1,168 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 5rem;
+
+  &__upper-section {
+    background-color: $clr-primary;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8rem;
+
+    &-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $fnt-logo;
+      font-size: 4.8rem;
+      color: #fff;
+    }
+
+    &-pagination {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .discount__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        &-img {
+          width: 50rem;
+          height: 33rem;
+        }
+
+        &-sale {
+          position: absolute;
+          left: -0.5rem;
+          top: -0.5rem;
+          z-index: 2;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: start;
+          // align-items: center;
+
+          &-img {
+            height: 15rem;
+            transform: rotate(20deg);
+          }
+
+          &-txt-up {
+            position: absolute;
+            top: 5rem;
+            left: 4.5rem;
+            z-index: 3;
+            color: #fff;
+            font-size: 2.4rem;
+          }
+
+          &-txt-bottom {
+            position: absolute;
+            top: 8rem;
+            left: 5.5rem;
+            z-index: 2;
+            color: #fff;
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+  }
+}
+
+.home__browse,
+.home__specials,
+.home__recipes {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home__specials {
+  justify-content: center;
+}
+
+.home__browse {
+  justify-content: end;
+}
+
+.home__recipes {
+  justify-content: start;
+}
+
+.home__browse-container,
+.home__specials-container,
+.home__recipes-container {
+  cursor: pointer;
+}
+
+.home__browse-img,
+.home__specials-img,
+.home__recipes-img {
+  height: 45rem;
+  border-radius: 10px;
+}
+
+.home__browse-text,
+.home__specials-text,
+.home__recipes-text {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.home__browse-text {
+  left: 0%;
+}
+
+.home__specials-text {
+  left: -3%;
+}
+
+.home__recipes-text {
+  left: 3%;
+}
+
+.home__browse-text h1,
+.home__specials-text h1,
+.home__recipes-text h1 {
+  font-family: $fnt-logo;
+  margin: 0;
+  color: white;
+  font-size: 8rem;
+  transform: translate(20%, 300%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home__browse-container:hover .home__browse-text,
+.home__specials-container:hover .home__specials-text,
+.home__recipes-container:hover .home__recipes-text {
+  opacity: 1;
+  transform: translateY(-25rem);
+}
+
+.home__browse-container:hover img,
+.home__specials-container:hover img,
+.home__recipes-container:hover img {
+  filter: blur(5px);
+  //   filter: grayscale(50%);
+}
+
+.MuiPagination-ul {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,50 @@
+.message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99998;
+
+  &__wrapper {
+    width: 50vh;
+    height: 25vh;
+    background-color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: modal-animation 0.3s ease-in-out;
+    padding: 2rem;
+    // background-image: url("../../../public/images/message_background.jpg");
+    // background-size: cover;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fnt-logo;
+    color: $clr-primary;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $clr-text;
+  }
+
+  &__body {
+    color: $clr-text;
+    font-family: $fnt-kanit;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  &__footer {
+    border-top: 2px solid $clr-text;
+    padding-top: 1rem;
+  }
+}

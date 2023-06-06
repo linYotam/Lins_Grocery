@@ -6,12 +6,15 @@ import {
   LocalFlorist,
   SellOutlined,
   ShoppingCartOutlined,
-} from '@mui/icons-material';
-import React, { useEffect, useState } from 'react';
-import Modal from '../Modal/Modal';
-import { useSelector, useDispatch } from 'react-redux';
-import { updateCart } from '../../reducers/cartSlice';
-import ProductAmount from '../ProductAmount/ProductAmount';
+} from "@mui/icons-material";
+import React, { useEffect, useState } from "react";
+import Modal from "../Modal/Modal";
+import { useSelector, useDispatch } from "react-redux";
+import { updateCart } from "../../reducers/cartSlice";
+import ProductAmount from "../ProductAmount/ProductAmount";
+import Cookies from "js-cookie";
+import Message from "../Message/Message";
+import Auth from "../Auth/Auth";
 
 const Card = ({ product, productQuantity }) => {
   const {
@@ -31,18 +34,21 @@ const Card = ({ product, productQuantity }) => {
   const [amount, setAmount] = useState(0);
   const [isFavorite, setIsFavorite] = useState(favorite);
   const [imgError, setImgError] = useState(false);
-  const [categoryName, setCategoryName] = useState('');
+  const [categoryName, setCategoryName] = useState("");
   const [currentPrice, setCurrentPrice] = useState(0);
+  const [showMessage, setShowMessage] = useState(false);
+  const [showSignWindow, setShowSignWindow] = useState(false);
 
   const dispatch = useDispatch();
-  const categories = useSelector(state => state.categories.value);
+  const categories = useSelector((state) => state.categories.value);
+  const user = Cookies.get("user");
 
   useEffect(() => {
     setAmount(productQuantity);
   }, [productQuantity]);
 
   useEffect(() => {
-    categories.forEach(category => {
+    categories.forEach((category) => {
       if (category.id === categoryId) setCategoryName(category.name);
     });
   }, [categories, categoryId]);
@@ -60,6 +66,10 @@ const Card = ({ product, productQuantity }) => {
     setIsModalOpen(false);
   };
 
+  const handleCloseMessage = () => {
+    setShowMessage(false);
+  };
+
   const toggleFavorite = () => {
     setIsFavorite(!isFavorite);
   };
@@ -69,25 +79,50 @@ const Card = ({ product, productQuantity }) => {
   };
 
   const handleUpdateCart = () => {
-    dispatch(updateCart({ product, amount }));
+    if (user !== undefined && user != null)
+      dispatch(updateCart({ product, amount, userId: user.id }));
+    else setShowMessage(true);
+  };
+
+  const closeSignPage = () => {
+    setShowSignWindow(false);
+  };
+
+  const openSignPage = () => {
+    setShowSignWindow(true);
   };
 
   return (
     <>
       <div className="product">
         <img
-          // src={imgError ? '/images/no_image.jpg' : imageUrl}
-          src={imageData || '/images/placeholder.png'}
+          src={imageData || "/images/placeholder.png"}
           alt={description}
           onError={handleImageError}
           className="product__img"
         />
 
-        <svg className={`product__like ${isFavorite ? 'product__like--active' : ''}`} onClick={toggleFavorite}>
+        <svg
+          className={`product__like ${
+            isFavorite ? "product__like--active" : ""
+          }`}
+          onClick={toggleFavorite}
+        >
           <use xlinkHref="/images/sprite.svg#icon-heart-full" />
         </svg>
 
-        {discount > 0 && <div className="product__discount">Discount {discount}%</div>}
+        {discount > 0 && (
+          // <div className="product__discount">Discount {discount}%</div>
+          <div className="product__discount">
+            <img
+              className="product__discount-img"
+              src="/images/sale.png"
+              alt="sale"
+            />
+            <span className="product__discount-txt">SALE</span>
+            <span className="product__discount-value">{discount}%</span>
+          </div>
+        )}
 
         <h5 className="product__name" onClick={handleOpenModal}>
           {title}
@@ -97,7 +132,8 @@ const Card = ({ product, productQuantity }) => {
           <SellOutlined className="product__icon" />
           {discount > 0 && (
             <p>
-              <span className="product__erase_number">${price}</span> ${currentPrice}
+              <span className="product__erase_number">${price}</span> $
+              {currentPrice}
             </p>
           )}
           {discount === 0 && <p>${currentPrice}</p>}
@@ -132,13 +168,25 @@ const Card = ({ product, productQuantity }) => {
         </button>
       </div>
 
+      {showMessage && (
+        <Message
+          handleCloseMessage={handleCloseMessage}
+          openSignPage={openSignPage}
+          title="Important Message"
+          text="You need to register or log in to add items to your cart."
+          type="warning"
+        />
+      )}
+
       {isModalOpen && (
         <Modal
           product={product}
-          imageUrl={imgError ? '/images/no_image.jpg' : imageData}
+          imageUrl={imgError ? "/images/no_image.jpg" : imageData}
           handleCloseModal={handleCloseModal}
         />
       )}
+
+      {showSignWindow && <Auth closeSignPage={closeSignPage} />}
     </>
   );
 };

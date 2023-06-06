@@ -7,12 +7,15 @@ import Footer from "./components/Footer/Footer";
 import Recipes from "./pages/Recipes/Recipes";
 import Admin from "./pages/Admin/Admin";
 import ShoppingCart from "./pages/ShoppingCart/ShoppingCart";
+import Specials from "./pages/Specials/Specials";
 
 const Layout = () => {
   return (
     <div className="app">
       <Navbar />
-      <Outlet />
+      <div className="content">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
@@ -38,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/recipes",
         element: <Recipes />,
+      },
+      {
+        path: "/specials",
+        element: <Specials />,
       },
       {
         path: "/admin",

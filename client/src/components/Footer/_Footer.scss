@@ -1,16 +1,23 @@
 /*******************************/
 /* FOOTER SECTION              */
 /*******************************/
+
 .footer {
-  padding: 5rem 0;
+  background-color: #fff;
+  padding-top: 4rem;
   border-top: 2px solid $clr-secondary;
   color: $clr-text;
+}
+
+.footer-button {
+  padding: 10px;
+  /* Additional styles for the button */
 }
 
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
-  margin: 0 auto;
+  margin: 3rem auto 0rem auto ;
 }
 
 .grid {
@@ -35,6 +42,9 @@
 
 .logo {
   height: 20rem;
+  &:hover {
+    filter: saturate(250%);
+  }
 }
 
 .footer-heading {
@@ -129,6 +139,6 @@
   font-size: 1.6rem;
   color: $clr-primary;
   line-height: 1.6;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   text-align: center;
 }

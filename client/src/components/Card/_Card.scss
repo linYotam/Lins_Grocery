@@ -8,17 +8,68 @@
 
   &__discount {
     position: absolute;
+    left: -0.5rem;
+    top: -0.5rem;
+    z-index: 2;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    font-size: 1.4rem;
-    top: 1rem;
-    left: 1rem;
-    height: 3rem;
-    width: 10rem;
-    background-color: $clr-discount;
-    color: #fff;
-    z-index: 8888;
+
+    &-img {
+      height: 9rem;
+      transform: rotate(20deg);
+    }
+
+    .product__discount {
+      position: relative;
+    }
+
+    &-txt {
+      position: absolute;
+      top: 3.2rem;
+      left: 2.2rem;
+      z-index: 2;
+      color: #fff;
+      font-size: 2rem;
+      opacity: 1;
+      animation: textAnimation 6s infinite;
+    }
+    &-value {
+      position: absolute;
+      top: 3.2rem;
+      left: 3rem;
+      z-index: 2;
+      color: #fff;
+      font-size: 2rem;
+      opacity: 0;
+      animation: valueAnimation 6s infinite;
+    }
+
+    @keyframes textAnimation {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes valueAnimation {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    // &-txt {
+    //   z-index: 2;
+    //   color: #fff;
+    //   margin-top: -3.5rem;
+    //   font-size: 1.4rem;
+    // }
   }
 
   &__erase_number {

@@ -11,7 +11,7 @@ import { Button, Typography } from "@mui/material";
 import { useSelector } from "react-redux";
 import CartCard from "../../components/CartCard/CartCard";
 import { ToastContainer } from "react-toastify";
-import CallToast from "../../components/Toaster/CallToaster";
+// import CallToast from "../../components/Toaster/CallToaster";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -57,7 +57,7 @@ const ShoppingCart = () => {
     setTotalWeight(weight);
     setTotalPrice(price);
     setTotalItems(amountOfItems);
-    CallToast("Cart updated", "success");
+    // CallToast("Cart updated", "success");
   }, [cartProducts]);
 
   return (

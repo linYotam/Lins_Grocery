@@ -14,7 +14,9 @@ html {
   /* font-size: 10px; Set: 1rem = 10px */
   /* 10px (target) / 16px (default value) = 0.625 = 62.5% */
   font-size: 62.5%;
-
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   // @include respond(tab-land) {
   //   // width < 1200
   //   font-size: 56.25%; //1rem === 9px, 9/16 === 56.25%
@@ -39,10 +41,13 @@ body {
   /* Since we set the box-sizing property to border-box on the <body> element (which is one of the document's top-most nodes), 
   the property is effectively passed on to all child / grandchild elements*/
   box-sizing: border-box;
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 0rem 3rem 3rem 3rem;
   line-height: 1;
   font-weight: 400;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
+  // position: relative;
+  // min-height: 100%;
+  overflow-x: hidden;
   // background-color: #61a48a;
 
   // @include respond(tab-port) {
@@ -51,7 +56,17 @@ body {
   // }
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.content {
+  margin-top: 10rem;
+}
+
 @font-face {
-  font-family: 'Brusher'; /*Can be any text*/
-  src: local('Brusher'), url('/fonts/Brusher.ttf') format('truetype');
+  font-family: "Brusher"; /*Can be any text*/
+  src: local("Brusher"), url("/fonts/Brusher.ttf") format("truetype");
 }

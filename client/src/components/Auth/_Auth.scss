@@ -86,7 +86,7 @@ $diffRatio: (($contW - $imgW) / $contW);
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-image: url('../../../public/images/welcome.jpg');
+  background-image: url("../../../public/images/welcome.jpg");
   background-size: cover;
 
   &__text-header {
@@ -97,25 +97,11 @@ $diffRatio: (($contW - $imgW) / $contW);
     .right {
       display: flex;
       flex-direction: column;
-      gap: 3rem;
       align-items: center;
       justify-content: center;
       color: $clr-text;
     }
   }
-
-  // display: flex;
-  // flex-direction: column;
-  // gap: 1rem;
-
-  // overflow: hidden;
-  // z-index: 2;
-  // position: absolute;
-  // left: 0;
-  // top: 0;
-  // width: $imgW;
-  // height: 100%;
-  // padding-top: 360px;
 }
 
 .img {
@@ -133,19 +119,19 @@ $diffRatio: (($contW - $imgW) / $contW);
   padding-top: 360px;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     top: 0;
     width: $contW;
     height: 100%;
-    background-image: url('../../../public/images/sign.jpg');
+    background-image: url("../../../public/images/sign.jpg");
     background-size: cover;
     transition: transform $switchAT ease-in-out;
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -215,7 +201,7 @@ $diffRatio: (($contW - $imgW) / $contW);
     }
 
     &:after {
-      content: '';
+      content: "";
       z-index: 2;
       position: absolute;
       left: 0;
@@ -262,9 +248,13 @@ $diffRatio: (($contW - $imgW) / $contW);
 
 .sign__header {
   width: 100%;
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   font-family: $fnt-logo;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .sign__label {
@@ -347,6 +337,30 @@ $diffRatio: (($contW - $imgW) / $contW);
 
   &:hover {
     background-color: $clr-signout-hover;
+  }
+}
+
+.cancel {
+  margin-bottom: 5px;
+  background: $clr-signout;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  width: 20rem;
+
+  &:hover {
+    background-color: $clr-signout-hover;
+  }
+}
+
+.shop {
+  margin-bottom: 5px;
+  background: $clr-secondary;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  width: 20rem;
+
+  &:hover {
+    background-color: $clr-secondary-hover;
   }
 }
 

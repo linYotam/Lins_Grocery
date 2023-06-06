@@ -1,34 +1,35 @@
-import React from 'react';
-import { styled } from '@mui/material/styles';
-import { Delete } from '@mui/icons-material';
-import TableRow from '@mui/material/TableRow';
-import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import ProductAmount from '../ProductAmount/ProductAmount';
-import { useDispatch } from 'react-redux';
-import { useState } from 'react';
-import { updateCart, removeItem } from '../../reducers/cartSlice';
-import { Button, IconButton } from '@mui/material';
+import React from "react";
+import { styled } from "@mui/material/styles";
+import { Delete } from "@mui/icons-material";
+import TableRow from "@mui/material/TableRow";
+import TableCell, { tableCellClasses } from "@mui/material/TableCell";
+import ProductAmount from "../ProductAmount/ProductAmount";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
+import { updateCart, removeItem } from "../../reducers/cartSlice";
+import { Button, IconButton } from "@mui/material";
+import Cookies from "js-cookie";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     // backgroundColor: "#c29e5b",
     // color: theme.palette.common.white,
-    fontSize: '2rem',
-    fontFamily: 'Kanit',
-    fontWeight: '600',
+    fontSize: "2rem",
+    fontFamily: "Kanit",
+    fontWeight: "600",
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: '1.4rem',
-    fontFamily: 'Kanit',
+    fontSize: "1.4rem",
+    fontFamily: "Kanit",
   },
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
-  '&:nth-of-type(odd)': {
+  "&:nth-of-type(odd)": {
     // backgroundColor: theme.palette.action.hover,
   },
   // hide last border
-  '&:last-child td, &:last-child th': {
+  "&:last-child td, &:last-child th": {
     border: 0,
   },
 }));
@@ -36,9 +37,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const CartCard = ({ product, amount: productCount }) => {
   const [amount, setAmount] = useState(productCount);
   const dispatch = useDispatch();
+  const user = Cookies.get("user");
 
   const handleUpdateCart = () => {
-    dispatch(updateCart({ product, amount }));
+    if (user !== undefined && user != null)
+      dispatch(updateCart({ product, amount, userId: user.id }));
+    else alert("Please register/login to add items to cart.");
   };
 
   const removeProduct = () => {
@@ -49,7 +53,11 @@ const CartCard = ({ product, amount: productCount }) => {
     <StyledTableRow key={product.name}>
       <StyledTableCell component="th" scope="row">
         <span className="cart-product">
-          <img src={product.imageData} alt={product.title} className="cart-image" />
+          <img
+            src={product.imageData}
+            alt={product.title}
+            className="cart-image"
+          />
           <div className="cart-product-info">
             <span className="title">{product.title}</span>
             <span className="data">
@@ -77,11 +85,12 @@ const CartCard = ({ product, amount: productCount }) => {
           component="span"
           variant="outlined"
           sx={{
-            fontSize: '1.4rem',
-            fontFamily: 'Kanit',
-            color: '#61a48a',
-            borderColor: '#61a48a',
-          }}>
+            fontSize: "1.4rem",
+            fontFamily: "Kanit",
+            color: "#61a48a",
+            borderColor: "#61a48a",
+          }}
+        >
           Update Cart
         </Button>
       </StyledTableCell>
@@ -89,7 +98,12 @@ const CartCard = ({ product, amount: productCount }) => {
         ${product.currentPrice * amount}
       </StyledTableCell>
       <StyledTableCell align="center">
-        <IconButton aria-label="delete" sx={{ color: '#61a48a' }} size="large" onClick={removeProduct}>
+        <IconButton
+          aria-label="delete"
+          sx={{ color: "#61a48a" }}
+          size="large"
+          onClick={removeProduct}
+        >
           <Delete />
         </IconButton>
       </StyledTableCell>
